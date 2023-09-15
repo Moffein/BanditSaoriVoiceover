@@ -1,0 +1,2550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Master Mixer" ID="{3BD8B28A-4AEC-445C-BA14-9F2D5494A9D5}" ShortID="710609565">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{1DF04AFE-B569-4C46-ADAF-A5D6D206EA9D}" ShortID="875072462">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Volume_SFX" ID="{6D6CE26A-58A8-4184-AEDF-37A2DACCE448}" WorkUnitID="{949D10ED-F2C8-46B2-A17D-538E10198F4E}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{E1680174-CC85-45B1-B3D2-14878701EB5E}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="SFX Mixer" ID="{3EBD2095-EE2A-4D4A-8465-D3C6754A9CE7}" ShortID="137851238">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Voiceover" ID="{A0AD1537-FC10-4568-A144-8D430DB880BC}" ShortID="454550319">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Saori_Battle_Buffed_1" ID="{93F86998-85F6-4DCD-8725-AF5D10A0786B}" ShortID="519644684">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_Buffed_1" ID="{E07ED704-8959-43BA-ABB9-16DF2F97B08D}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_Buffed_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="710236173"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_Buffed_1" ID="{E07ED704-8959-43BA-ABB9-16DF2F97B08D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Battle_BuffSelf_1" ID="{8D606C42-50EC-4A7C-AFE8-7C7868D4D7D2}" ShortID="803502829">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_BuffSelf_1" ID="{EF138725-D108-4E1D-9FE0-21D3CA95A9FC}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_BuffSelf_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1020212039"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_BuffSelf_1" ID="{EF138725-D108-4E1D-9FE0-21D3CA95A9FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Battle_Covered_1" ID="{A7ACC5D5-8EB2-4F34-9542-F9B75AD278ED}" ShortID="460190503">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_Covered_1" ID="{3EDA643B-F0BA-436E-9098-759B80961266}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_Covered_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="108787553"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_Covered_1" ID="{3EDA643B-F0BA-436E-9098-759B80961266}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Battle_Defense_1" ID="{83B2A592-9DD4-40DD-918E-0303A099ADCE}" ShortID="107141647">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_Defense_1" ID="{A8338E4D-73C1-4281-A6A7-12814D5C9698}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_Defense_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="937645142"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_Defense_1" ID="{A8338E4D-73C1-4281-A6A7-12814D5C9698}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Battle_Move_2" ID="{51DD1D80-5BCA-4694-84D7-31D282A2BF29}" ShortID="1049221733">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_Move_2" ID="{04296C9E-595C-4295-9D7D-7D36E6616A3D}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_Move_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="371596351"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_Move_2" ID="{04296C9E-595C-4295-9D7D-7D36E6616A3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Battle_Recovery_1" ID="{A9B1ACBA-B473-46F1-9A63-F3080367CD9D}" ShortID="943105054">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_Recovery_1" ID="{937BA92A-F910-44F7-A8EB-367C86B2C5B1}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_Recovery_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="452803085"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_Recovery_1" ID="{937BA92A-F910-44F7-A8EB-367C86B2C5B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Battle_TacticalAction_1" ID="{6F6C183D-52CC-4997-B7C3-EACA93893E13}" ShortID="122255942">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_TacticalAction_1" ID="{DD0A404D-42D7-4367-9252-0FA97EA9C6AF}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_TacticalAction_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="819549019"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_TacticalAction_1" ID="{DD0A404D-42D7-4367-9252-0FA97EA9C6AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Cafe_monolog_1" ID="{250C1016-FC0B-4181-B3F5-87C38056712F}" ShortID="364845031">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Cafe_monolog_1" ID="{1980B431-EB27-489E-B119-690F4F729690}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Cafe_monolog_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="554662605"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Cafe_monolog_1" ID="{1980B431-EB27-489E-B119-690F4F729690}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Cafe_monolog_2" ID="{3273FD7F-8EE0-497B-B7B6-B0B80D25B465}" ShortID="922311104">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Cafe_monolog_2" ID="{8A35589D-AC5E-4D9F-A0E8-CBEEBAD69448}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Cafe_monolog_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="993952749"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Cafe_monolog_2" ID="{8A35589D-AC5E-4D9F-A0E8-CBEEBAD69448}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Cafe_monolog_3" ID="{09D2EE83-6F7E-4A43-BF1C-816BB6AA2AB8}" ShortID="149830618">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Cafe_monolog_3" ID="{ADE88893-FFE0-4919-8AE2-61FE1FFB7D53}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Cafe_monolog_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="145984689"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Cafe_monolog_3" ID="{ADE88893-FFE0-4919-8AE2-61FE1FFB7D53}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Cafe_monolog_4" ID="{ACD5DEC5-5929-4157-A2C7-4F7E751128B3}" ShortID="560758165">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Cafe_monolog_4" ID="{4523307C-E5B5-4879-9943-D70A787DA36D}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Cafe_monolog_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="500928707"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Cafe_monolog_4" ID="{4523307C-E5B5-4879-9943-D70A787DA36D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Cafe_monolog_5" ID="{EDB49F18-32F6-4B1C-B0E0-E408B32A1442}" ShortID="453507818">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Cafe_monolog_5" ID="{795AE121-A5F2-453A-8036-CEBAE63819BF}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Cafe_monolog_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="867431133"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Cafe_monolog_5" ID="{795AE121-A5F2-453A-8036-CEBAE63819BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_CommonSkill" ID="{BEFE165C-DF3F-4988-BC10-8562C5629442}" ShortID="562965421">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_CommonSkill" ID="{2869FF2A-81C9-4FCB-9F2D-07DDA823F23B}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_CommonSkill.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="510991571"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_CommonSkill" ID="{2869FF2A-81C9-4FCB-9F2D-07DDA823F23B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_ExSkill_1" ID="{AE9EC3D2-E030-4CF7-813C-A4E5ABB48457}" ShortID="941226282">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_ExSkill_1" ID="{7C8ADF29-2515-43BD-AAA1-575B13E84344}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_ExSkill_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="999505975"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_ExSkill_1" ID="{7C8ADF29-2515-43BD-AAA1-575B13E84344}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_ExSkill_2" ID="{30995709-E429-4498-A031-691604ACE259}" ShortID="930289834">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_ExSkill_2" ID="{8BC5F421-3452-40CF-B8E6-2E536B5E34E8}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_ExSkill_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="246839549"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_ExSkill_2" ID="{8BC5F421-3452-40CF-B8E6-2E536B5E34E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_ExSkill_3" ID="{38E5EFEB-06CD-4191-A84C-249862FB57A4}" ShortID="866707583">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_ExSkill_3" ID="{6286C742-CDD0-440E-A4ED-421B278755C7}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_ExSkill_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910959289"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_ExSkill_3" ID="{6286C742-CDD0-440E-A4ED-421B278755C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_ExSkill_Level_1" ID="{148F0352-C647-4D8E-AA3D-2A7BBD3871DB}" ShortID="788243750">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_ExSkill_Level_1" ID="{29956BEC-C572-44E1-8A93-6FB6CF366CB7}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_ExSkill_Level_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="801804637"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_ExSkill_Level_1" ID="{29956BEC-C572-44E1-8A93-6FB6CF366CB7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_ExSkill_Level_2" ID="{2F6529A4-0BA8-4F21-BAF5-3EA6522F7961}" ShortID="438822186">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_ExSkill_Level_2" ID="{A79F4127-7CD4-4909-9453-F929AEE34DDD}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_ExSkill_Level_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="734012125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_ExSkill_Level_2" ID="{A79F4127-7CD4-4909-9453-F929AEE34DDD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_ExSkill_Level_3" ID="{5306EACE-586F-49D1-80EC-92AC55A56788}" ShortID="623495433">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_ExSkill_Level_3" ID="{4FDB702B-6BB2-43BD-902E-CF7357FFBE31}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_ExSkill_Level_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="597146826"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_ExSkill_Level_3" ID="{4FDB702B-6BB2-43BD-902E-CF7357FFBE31}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_ExWeapon_Get" ID="{F9B5D172-8EAE-453F-9FEA-88C1E3C27CB3}" ShortID="565285924">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_ExWeapon_Get" ID="{F98AAD9C-87B2-43A9-8685-B8F8F73A1D42}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_ExWeapon_Get.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="43302002"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_ExWeapon_Get" ID="{F98AAD9C-87B2-43A9-8685-B8F8F73A1D42}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Formation_In_1" ID="{D445A601-177B-4B32-98F6-2F5E30A660C2}" ShortID="390957033">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Formation_In_1" ID="{737DF519-0775-4976-919F-EBE613EDBE52}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Formation_In_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="186943608"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Formation_In_1" ID="{737DF519-0775-4976-919F-EBE613EDBE52}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Formation_In_2" ID="{E1043228-2BCE-44B5-8DC8-E37C0C0BDD25}" ShortID="1048187629">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Formation_In_2" ID="{4C9204C5-0316-4DBC-9F40-84B60D7EB877}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Formation_In_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="560544104"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Formation_In_2" ID="{4C9204C5-0316-4DBC-9F40-84B60D7EB877}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Formation_Select" ID="{B180D4B9-D686-4BB6-918B-38F654F9D9D5}" ShortID="839688110">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Formation_Select" ID="{43B0EF28-C85C-444D-A337-24E474110ED8}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Formation_Select.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="944232760"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Formation_Select" ID="{43B0EF28-C85C-444D-A337-24E474110ED8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Gachaget" ID="{4608F8B3-F1E9-4C95-A3D1-076C98FCAD52}" ShortID="570856521">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Gachaget" ID="{7F349954-8436-4713-A7A1-2094DBDD710D}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Gachaget.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="573440324"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Gachaget" ID="{7F349954-8436-4713-A7A1-2094DBDD710D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_MemorialLobby_1" ID="{F9BC6E12-3353-447A-9468-A063C02F99C2}" ShortID="579154004">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_MemorialLobby_1" ID="{5423DDA3-ED69-4D2B-9FBD-397026F77B00}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_MemorialLobby_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="787797976"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_MemorialLobby_1" ID="{5423DDA3-ED69-4D2B-9FBD-397026F77B00}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_MemorialLobby_3_1" ID="{90427851-6C47-42C2-A62E-CEF7FBE880ED}" ShortID="662588313">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_MemorialLobby_3_1" ID="{A6024229-12C2-4373-A86B-F263D44D4556}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_MemorialLobby_3_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="517622834"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_MemorialLobby_3_1" ID="{A6024229-12C2-4373-A86B-F263D44D4556}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_MemorialLobby_3_2" ID="{865E4EAC-41DD-47AC-8B01-CEA8F2D2BE7E}" ShortID="158811060">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_MemorialLobby_3_2" ID="{CA648333-7FB0-401E-9802-5E080D735BCF}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_MemorialLobby_3_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="884788967"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_MemorialLobby_3_2" ID="{CA648333-7FB0-401E-9802-5E080D735BCF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_MemorialLobby_5" ID="{4A6A3F1A-4914-4545-8680-7680A011F509}" ShortID="170903237">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_MemorialLobby_5" ID="{29E84208-EEAB-4103-898C-C8D1512F66AE}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_MemorialLobby_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="134418427"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_MemorialLobby_5" ID="{29E84208-EEAB-4103-898C-C8D1512F66AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Season_Birthday_Player" ID="{A07DD952-4477-4630-AEA6-B656D49F0B1E}" ShortID="539876711">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Season_Birthday_Player" ID="{8B0F2ACF-930B-49B2-B58C-1D0B69767EF5}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Season_Birthday_Player.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1072307801"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Season_Birthday_Player" ID="{8B0F2ACF-930B-49B2-B58C-1D0B69767EF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Season_Halloween" ID="{1DB7BD05-8E66-4A73-AEEC-194D192FD3FB}" ShortID="605296320">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Season_Halloween" ID="{CE4FDEEF-D2D7-4C7D-8765-474AFB16F183}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Season_Halloween.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="7389379"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Season_Halloween" ID="{CE4FDEEF-D2D7-4C7D-8765-474AFB16F183}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Season_NewYear" ID="{1551AA04-BEE7-4D47-87F5-416C84BB92FF}" ShortID="757111369">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Season_NewYear" ID="{8F9C9C06-63A6-4836-9AC0-3F0FB1234CF4}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Season_NewYear.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="173087257"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Season_NewYear" ID="{8F9C9C06-63A6-4836-9AC0-3F0FB1234CF4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Season_Xmas" ID="{150A49F8-B59B-4E2D-AF01-95C6D8AFA0CE}" ShortID="856354962">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Season_Xmas" ID="{085BF836-F6F7-4A65-98CD-06FDA8A25C79}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Season_Xmas.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="190664891"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Season_Xmas" ID="{085BF836-F6F7-4A65-98CD-06FDA8A25C79}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Title" ID="{771596D0-8231-4724-BE4A-25F136C52351}" ShortID="250921015">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Title" ID="{C7C1D861-B354-4C24-AE02-D6A4416E2568}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Title.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="696600494"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Title" ID="{C7C1D861-B354-4C24-AE02-D6A4416E2568}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Defeat" ID="{FED52E04-3AFF-4408-A5F5-AE3379402190}" ShortID="379417832">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Tactic_Defeat_2" ID="{00ECDE48-7223-4799-B6EB-4F3E241F88EC}" ShortID="336160193">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Tactic_Defeat_2" ID="{BD331882-1449-4295-AED8-1E8A00B9E7E8}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Tactic_Defeat_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="834826717"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Tactic_Defeat_2" ID="{BD331882-1449-4295-AED8-1E8A00B9E7E8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Tactic_Defeat_1" ID="{93018ABD-1011-4D48-9F18-1D17256749EA}" ShortID="160646002">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Tactic_Defeat_1" ID="{2BA91ACD-524E-4789-9C5E-1F01D8D3C113}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Tactic_Defeat_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="277985822"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Tactic_Defeat_1" ID="{2BA91ACD-524E-4789-9C5E-1F01D8D3C113}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_Retire" ID="{D2FF2621-EA8F-474F-81BC-A2140DA74FED}" ShortID="675028243">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Retire" ID="{A90C2CB3-8159-4946-A50C-60F9A24ABB2C}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Retire.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="94800803"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Retire" ID="{A90C2CB3-8159-4946-A50C-60F9A24ABB2C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_MemorialLobby_3_2" ID="{FF28F2D4-EE78-4373-A220-069606114C5C}" ShortID="1014251750">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_3_2" ID="{881537CD-DECB-4491-A753-96B60A1BD607}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_3_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="884788967"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_3_2" ID="{881537CD-DECB-4491-A753-96B60A1BD607}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Hurt" ID="{B8E6FC5F-0770-43FF-A62E-473625E77BBD}" ShortID="442547582">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Battle_Damage_1" ID="{5300A8B4-0CFB-4FF5-8A9C-835283D3B472}" ShortID="535186717">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Damage_1" ID="{DBFE03D3-6FBF-485A-BA0F-A72D0CF20223}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Damage_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="139339475"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Damage_1" ID="{DBFE03D3-6FBF-485A-BA0F-A72D0CF20223}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_Damage_2" ID="{155ED66D-5FB3-4A78-BF56-155BE2054945}" ShortID="594862251">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Damage_2" ID="{E2B0919D-DC0F-4A06-BD08-3F25F9B86F2A}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Damage_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="726567411"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Damage_2" ID="{E2B0919D-DC0F-4A06-BD08-3F25F9B86F2A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_Damage_3" ID="{8D5CA131-0AC7-412A-B996-B221286CF30B}" ShortID="1051398534">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Damage_3" ID="{D01EA007-2B26-4C3C-A38E-66E99CA29608}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Damage_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="446879545"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Damage_3" ID="{D01EA007-2B26-4C3C-A38E-66E99CA29608}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Shout" ID="{131DBEC4-C8FD-4C75-9DC4-66E8A831C8AB}" ShortID="289696447">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Battle_Shout_2" ID="{81413315-1692-4767-9DD8-9A3F120A95CF}" ShortID="303745737">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Shout_2" ID="{748F16B9-D919-405C-9BEA-B83E7C2CAB36}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Shout_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="419965893"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Shout_2" ID="{748F16B9-D919-405C-9BEA-B83E7C2CAB36}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_Shout_1" ID="{0DAA5F0A-85E3-463D-B5AC-86A73E386277}" ShortID="683045254">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Shout_1" ID="{D74C597A-BC20-46AE-8013-78933B0AEEE6}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Shout_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="311966967"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Shout_1" ID="{D74C597A-BC20-46AE-8013-78933B0AEEE6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_Shout_3" ID="{732EBB77-ECB5-452F-A05F-834A64D7402B}" ShortID="917391737">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Shout_3" ID="{A64B3C50-5529-401E-B3BB-D96DBD26A6E7}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Shout_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="393453105"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Shout_3" ID="{A64B3C50-5529-401E-B3BB-D96DBD26A6E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Victory" ID="{3946633D-3243-49E1-BA7B-DBC9CE85DB45}" ShortID="637836639">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Battle_Victory_1" ID="{E1AE74C3-C4CA-4D9F-BF69-4D00C9C048BC}" ShortID="561123962">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Victory_1" ID="{C120AC75-3EFE-4E1E-9F3B-103A57E43632}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Victory_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="799420894"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Victory_1" ID="{C120AC75-3EFE-4E1E-9F3B-103A57E43632}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Tactic_Victory_1" ID="{FFFD7297-D694-4A6C-BF6F-E071798AE2A8}" ShortID="505653295">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Tactic_Victory_1" ID="{429FD8CC-9A67-495C-B8C8-12BC9B1A82E1}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Tactic_Victory_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="355202324"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Tactic_Victory_1" ID="{429FD8CC-9A67-495C-B8C8-12BC9B1A82E1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Tactic_Victory_2" ID="{B7181040-D210-434C-B622-52BB144122FF}" ShortID="619880929">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Tactic_Victory_2" ID="{94BD11DD-F539-4E46-BDA9-9960B04619CB}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Tactic_Victory_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1050133791"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Tactic_Victory_2" ID="{94BD11DD-F539-4E46-BDA9-9960B04619CB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_Victory_2" ID="{5DE689DF-B272-4BD2-8F53-9E6F00E161BD}" ShortID="173893657">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Victory_2" ID="{E1427CFD-4417-4A08-9DEC-2CD4FAD0DAA3}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Victory_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="444182674"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Victory_2" ID="{E1427CFD-4417-4A08-9DEC-2CD4FAD0DAA3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Lobby" ID="{BD0CE924-C4E1-4653-8A0B-FCC9F5336CFA}" ShortID="999019352">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_LogIn_2" ID="{5274F090-60D3-4DF6-A723-FD0FE6C19AA9}" ShortID="919945271">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_LogIn_2" ID="{0A3D9C4A-6BBE-45EF-BD9A-A7BED77CC7DE}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_LogIn_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="287662408"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_LogIn_2" ID="{0A3D9C4A-6BBE-45EF-BD9A-A7BED77CC7DE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_LogIn_1" ID="{4917EE8D-AA19-4896-B41F-4CFE9D864D78}" ShortID="800105921">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_LogIn_1" ID="{9DAF5F56-F02A-4525-879B-84CF46DBA90A}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_LogIn_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="819043646"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_LogIn_1" ID="{9DAF5F56-F02A-4525-879B-84CF46DBA90A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Lobby_3" ID="{C567C886-7A81-4255-85ED-B82D1B2F58A9}" ShortID="183667813">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Lobby_3" ID="{928AFCA6-EDEE-48DC-B23A-1B2DA6C6FE32}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Lobby_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="738388558"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Lobby_3" ID="{928AFCA6-EDEE-48DC-B23A-1B2DA6C6FE32}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Lobby_5" ID="{3D87FE11-1679-403C-A295-EE85D08065EF}" ShortID="74642715">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Lobby_5" ID="{6E45F287-6E43-4621-B524-BE65DC5CD4AE}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Lobby_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="392924616"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Lobby_5" ID="{6E45F287-6E43-4621-B524-BE65DC5CD4AE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Lobby_4" ID="{3B5524C0-3DB0-4F24-8A2E-9463656CF1ED}" ShortID="907407520">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Lobby_4" ID="{834301B3-B15C-40B0-AB1B-B584AE26B2E9}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Lobby_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="274171975"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Lobby_4" ID="{834301B3-B15C-40B0-AB1B-B584AE26B2E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Lobby_2" ID="{A08D522B-E8F7-441A-BD0C-B5CF94E39C4F}" ShortID="1042832788">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Lobby_2" ID="{59375F64-40CF-436E-AF03-9DFE7490E43B}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Lobby_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="314459040"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Lobby_2" ID="{59375F64-40CF-436E-AF03-9DFE7490E43B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Lobby_1" ID="{5198BAFE-C74D-4BD2-9E06-2B1FBBB179AE}" ShortID="183555065">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Lobby_1" ID="{2C749D84-C1B6-4E97-B2DE-11928170F391}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Lobby_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="635722642"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Lobby_1" ID="{2C749D84-C1B6-4E97-B2DE-11928170F391}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Relationship" ID="{05971689-3463-4404-BAFC-05D760DE5B4E}" ShortID="776633869">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Relationship_Up_1" ID="{05E98677-F669-43CE-B52F-617A1FE3604B}" ShortID="371976267">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Relationship_Up_1" ID="{C569F83B-1D39-4C32-9FA3-5A8ECD8A5519}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Relationship_Up_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="362920439"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Relationship_Up_1" ID="{C569F83B-1D39-4C32-9FA3-5A8ECD8A5519}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Relationship_Up_4" ID="{B90F471C-C47D-440A-870A-A3BCE70284B4}" ShortID="160342167">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Relationship_Up_4" ID="{4CD5CF72-86EE-43A8-A5F0-DE38C0F26633}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Relationship_Up_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="356475054"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Relationship_Up_4" ID="{4CD5CF72-86EE-43A8-A5F0-DE38C0F26633}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Relationship_Up_3" ID="{55DD09ED-DF69-494A-ACCE-4B9089483212}" ShortID="918241278">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Relationship_Up_3" ID="{86D52AA1-F25C-4404-B0D8-04A5769CE9AA}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Relationship_Up_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="599737555"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Relationship_Up_3" ID="{86D52AA1-F25C-4404-B0D8-04A5769CE9AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="LevelUp_Short" ID="{CF0E8756-0B38-46BA-A857-17380F261FD9}" ShortID="928057810">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Growup_2" ID="{6A74E78F-58B6-4458-9840-29393D31F40F}" ShortID="749852032">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Growup_2" ID="{BD4FED81-E182-4DFC-A6E8-825A04C3216B}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Growup_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="50623914"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Growup_2" ID="{BD4FED81-E182-4DFC-A6E8-825A04C3216B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Growup_1" ID="{D0C39006-997F-4399-B5F4-00159BA2F2F4}" ShortID="102541197">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Growup_1" ID="{64A2896C-2A4E-40B9-9316-6D7377D93777}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Growup_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="729463796"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Growup_1" ID="{64A2896C-2A4E-40B9-9316-6D7377D93777}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="LevelUp_Long" ID="{1027E518-7E4C-4632-B62F-C9437B47D943}" ShortID="95606207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Growup_4" ID="{56B2AF2D-A299-435B-9C30-C1C5E421EFC8}" ShortID="213729486">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Growup_4" ID="{837E9419-37FD-441F-B933-904DAC1C8AEE}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Growup_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="104656980"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Growup_4" ID="{837E9419-37FD-441F-B933-904DAC1C8AEE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Growup_3" ID="{700B18CF-B8BC-4E35-B9B7-7D6538D5D8F8}" ShortID="265429826">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Growup_3" ID="{0166474C-A071-4AFC-86E3-F347DFBB14A0}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Growup_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="801927821"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Growup_3" ID="{0166474C-A071-4AFC-86E3-F347DFBB14A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Birthday" ID="{B0BB8B04-1DCF-4FAF-B3F6-ED75A7F620F2}" ShortID="1026554956">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Season_Birthday_1" ID="{E6460A3F-9442-4180-A019-D5296EFCB351}" ShortID="14611460">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Season_Birthday_1" ID="{765F3EBF-0084-4FB8-99EB-DF1C20142B5F}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Season_Birthday_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="481229989"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Season_Birthday_1" ID="{765F3EBF-0084-4FB8-99EB-DF1C20142B5F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Season_Birthday_2" ID="{C77862F6-17EF-47F9-A8FE-E61D922A9730}" ShortID="320401897">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Season_Birthday_2" ID="{D80D2506-498F-4F6E-975E-B071DC1EDBB3}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Season_Birthday_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="846584939"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Season_Birthday_2" ID="{D80D2506-498F-4F6E-975E-B071DC1EDBB3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Saori_Season_Birthday_1" ID="{E6460A3F-9442-4180-A019-D5296EFCB351}"/>
+												<ItemRef Name="Saori_Season_Birthday_2" ID="{C77862F6-17EF-47F9-A8FE-E61D922A9730}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Spawn" ID="{9F7AE246-1C0F-437F-8D5D-D9C81306B010}" ShortID="934801286">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Battle_In_2" ID="{8E3F7DCC-44E8-4826-B34E-0C2917FD9415}" ShortID="20872401">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_In_2" ID="{3A87DF71-68E5-4681-90E7-53830032D626}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_In_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1021844675"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_In_2" ID="{3A87DF71-68E5-4681-90E7-53830032D626}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_In_1" ID="{96D5BE73-1FB5-4446-A86B-3AFB40070B37}" ShortID="525316691">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_In_1" ID="{F23AD2BD-1075-4836-812B-660FAB8854DD}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_In_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="556435204"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_In_1" ID="{F23AD2BD-1075-4836-812B-660FAB8854DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Tactic_In_1" ID="{82988A2F-9B54-47E1-8BD5-E834C27C19B6}" ShortID="483944361">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Tactic_In_1" ID="{B454FAD7-64A0-4952-8548-8F687E6940B4}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Tactic_In_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="334882985"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Tactic_In_1" ID="{B454FAD7-64A0-4952-8548-8F687E6940B4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Tactic_In_2" ID="{72BE3086-1FCD-4971-B16D-D29942F3FF41}" ShortID="56470236">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Tactic_In_2" ID="{71744A70-2581-4A7A-A809-0897DB3742F3}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Tactic_In_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="870947300"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Tactic_In_2" ID="{71744A70-2581-4A7A-A809-0897DB3742F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="Saori_Battle_Move_1" ID="{80030D9C-0387-4AFA-88D1-E538D85CBB00}" ShortID="738374198">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Battle_Move_1" ID="{55775ECF-75B7-47DE-9F37-C48B9F453599}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Battle_Move_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395501518"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Battle_Move_1" ID="{55775ECF-75B7-47DE-9F37-C48B9F453599}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Stealth" ID="{F10BEB60-1F94-42E6-A567-A1E5D0413E3B}" ShortID="412576153">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_Battle_TacticalAction_1" ID="{EA360D39-1484-44E7-BC35-A93480349FFE}" ShortID="932682415">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_TacticalAction_1" ID="{5E8BF53D-AFC5-460E-8CEA-D676378886E0}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_TacticalAction_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="819549019"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_TacticalAction_1" ID="{5E8BF53D-AFC5-460E-8CEA-D676378886E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_Battle_Move_1" ID="{D3B93BAB-24DB-4083-812B-E1E6B9B2C98E}" ShortID="539914796">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_Battle_Move_1" ID="{A302BBCC-CABE-43D2-A96C-26E57F11C73F}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_Battle_Move_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="395501518"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_Battle_Move_1" ID="{A302BBCC-CABE-43D2-A96C-26E57F11C73F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_CommonSkill" ID="{8A094281-3EDD-4C3B-950A-95C53412CD9C}" ShortID="796825389">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_CommonSkill" ID="{EB5BDBF3-7DA3-45BC-94E6-B09DFAFFB65E}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_CommonSkill.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="510991571"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_CommonSkill" ID="{EB5BDBF3-7DA3-45BC-94E6-B09DFAFFB65E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="ExLevel" ID="{27CF8071-DB56-4A20-88D8-8A2144813C9A}" ShortID="329960316">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_ExSkill_Level_1" ID="{947F4ADB-2D9B-46E3-AB04-EC67C41797A0}" ShortID="909820849">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_ExSkill_Level_1" ID="{BEA50E83-E8CD-4BDD-96BA-6A3C68F78562}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_ExSkill_Level_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="801804637"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_ExSkill_Level_1" ID="{BEA50E83-E8CD-4BDD-96BA-6A3C68F78562}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_ExSkill_Level_2" ID="{4CA337B5-F795-47D4-9621-A08BAFA58E2E}" ShortID="537087647">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_ExSkill_Level_2" ID="{C094D8B1-68EB-4649-8506-4F86BBAAD10B}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_ExSkill_Level_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="734012125"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_ExSkill_Level_2" ID="{C094D8B1-68EB-4649-8506-4F86BBAAD10B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_ExSkill_Level_3" ID="{2788BD37-25B5-4D69-B5CF-DAFDB8E0030A}" ShortID="332935956">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_ExSkill_Level_3" ID="{21926A60-6576-41D3-8E17-9BF829C4FCAD}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_ExSkill_Level_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="597146826"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_ExSkill_Level_3" ID="{21926A60-6576-41D3-8E17-9BF829C4FCAD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Ex" ID="{62207B11-D8B9-4C2C-BB1B-DE5E5DF29BA0}" ShortID="38524211">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_ExSkill_3" ID="{B703E041-2E06-43C2-BE9C-FBFA97980F06}" ShortID="214582488">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_ExSkill_3" ID="{86D4396D-4A1B-4E5E-A3E3-6A1E983B392C}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_ExSkill_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="910959289"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_ExSkill_3" ID="{86D4396D-4A1B-4E5E-A3E3-6A1E983B392C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_ExSkill_1" ID="{190FDEFE-F79A-4B2C-A2A7-450CDA6ADD06}" ShortID="883927588">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_ExSkill_1" ID="{C3EA5F1E-8E97-4FB5-833F-521875BE8772}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_ExSkill_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="999505975"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_ExSkill_1" ID="{C3EA5F1E-8E97-4FB5-833F-521875BE8772}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_ExSkill_2" ID="{4CDF1409-EA8A-4470-AC4A-1EFE7884B515}" ShortID="562242785">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_ExSkill_2" ID="{20BA2677-E669-4F53-9665-ABE7AA5BC954}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_ExSkill_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="246839549"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_ExSkill_2" ID="{20BA2677-E669-4F53-9665-ABE7AA5BC954}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="LowHealth" ID="{C699EA09-0245-45B2-ABE6-FFA002777136}" ShortID="562811696">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_MemorialLobby_4_1" ID="{B06F8B64-9BE5-4D3D-A3A2-6EA1E2DCF2A0}" ShortID="439351011">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_4_1" ID="{D9B83B26-B766-4157-A34A-7E3A5913310B}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_4_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="971010640"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_4_1" ID="{D9B83B26-B766-4157-A34A-7E3A5913310B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_MemorialLobby_2_1" ID="{6E8A502F-F217-4825-A60E-AF574F8C9809}" ShortID="717905066">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_2_1" ID="{41A48C28-74B6-41D3-9F1A-AA139C282425}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_2_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="786203666"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_2_1" ID="{41A48C28-74B6-41D3-9F1A-AA139C282425}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Memorial2" ID="{A9650E78-8AB8-4580-94C2-134C8FCAA3DB}" ShortID="246118272">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_MemorialLobby_2_1" ID="{2F850E43-615B-40A4-B8E8-8C2663A38840}" ShortID="272320700">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_2_1" ID="{8172789E-5129-4D30-BEE2-A34BBD2DE242}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_2_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="786203666"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_2_1" ID="{8172789E-5129-4D30-BEE2-A34BBD2DE242}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_MemorialLobby_2_2" ID="{5BCD9372-4315-4AC4-9154-78A9FB2B1F04}" ShortID="542330207">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_2_2" ID="{AFF6C445-D56A-4400-8BCC-5CB9567EA0FE}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_2_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="528706030"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_2_2" ID="{AFF6C445-D56A-4400-8BCC-5CB9567EA0FE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Saori_MemorialLobby_2_1" ID="{2F850E43-615B-40A4-B8E8-8C2663A38840}"/>
+												<ItemRef Name="Saori_MemorialLobby_2_2" ID="{5BCD9372-4315-4AC4-9154-78A9FB2B1F04}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Memorial4" ID="{FB645498-BFDC-4BD2-BA73-65F0B5C143A0}" ShortID="248883347">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Saori_MemorialLobby_4_1" ID="{C5117EAF-CBB8-4488-A9A1-80A63CD75728}" ShortID="182069850">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_4_1" ID="{CBA3B3D9-61B9-46B3-B1A3-212EE35874B1}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_4_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="971010640"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_4_1" ID="{CBA3B3D9-61B9-46B3-B1A3-212EE35874B1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_MemorialLobby_4_3" ID="{5F324061-710B-492A-A13C-A780393B39DA}" ShortID="287573360">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_4_3" ID="{DAD60936-15EA-463B-8FEA-CEFFFAED7320}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_4_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="73085304"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_4_3" ID="{DAD60936-15EA-463B-8FEA-CEFFFAED7320}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Saori_MemorialLobby_4_2" ID="{24AEE8E8-3303-41CA-8711-F199710E6435}" ShortID="375736465">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Saori_MemorialLobby_4_2" ID="{6E274577-194B-4ABF-A6C3-BCC4712B8F9B}">
+															<Language>SFX</Language>
+															<AudioFile>Saori_MemorialLobby_4_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1072799129"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Saori_MemorialLobby_4_2" ID="{6E274577-194B-4ABF-A6C3-BCC4712B8F9B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Saori_MemorialLobby_4_1" ID="{C5117EAF-CBB8-4488-A9A1-80A63CD75728}"/>
+												<ItemRef Name="Saori_MemorialLobby_4_2" ID="{24AEE8E8-3303-41CA-8711-F199710E6435}"/>
+												<ItemRef Name="Saori_MemorialLobby_4_3" ID="{5F324061-710B-492A-A13C-A780393B39DA}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="Saori_Lobby_5" ID="{F3BAF24B-7B2A-4A8F-8EB6-26EDF2597DD6}" ShortID="721761170">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Lobby_5" ID="{ABA68B8C-7E2C-4D19-94D2-B799C13E5DDF}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Lobby_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="392924616"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Lobby_5" ID="{ABA68B8C-7E2C-4D19-94D2-B799C13E5DDF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Relationship_Up_2" ID="{219F63C3-8F75-4D63-9F31-C94C99AC9181}" ShortID="385216276">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Relationship_Up_2" ID="{CAC6751A-8D3F-4C47-AAED-659A6303A7DD}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Relationship_Up_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="996373495"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Relationship_Up_2" ID="{CAC6751A-8D3F-4C47-AAED-659A6303A7DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Saori_Lobby_3" ID="{B99AF3B9-FF33-47C4-90C3-72AE502F7BED}" ShortID="798702502">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAtt" ID="{FE0C12EC-AD0F-4B1E-A10C-AEEDF4DDE498}" WorkUnitID="{B9D092EF-3549-4F33-AF8E-7D8EE0A406E1}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62FA5379-1304-48FA-8E0F-691611B3B9C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013B3216-7A7E-4E9C-A15D-0D506723EED5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Saori_Lobby_3" ID="{C5F32C75-9356-48C1-BE2F-4BC4874D5725}">
+													<Language>SFX</Language>
+													<AudioFile>Saori_Lobby_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="738388558"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Saori_Lobby_3" ID="{C5F32C75-9356-48C1-BE2F-4BC4874D5725}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

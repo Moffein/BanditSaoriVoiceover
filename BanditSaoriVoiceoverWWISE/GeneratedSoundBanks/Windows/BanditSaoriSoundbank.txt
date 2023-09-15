@@ -1,0 +1,86 @@
+Event	ID	Name			Wwise Object Path	Notes
+	22440388	Play_BanditSaori_TitleDrop			\Default Work Unit\Play_BanditSaori_TitleDrop	
+	100544925	Play_BanditSaori_Relationship			\Default Work Unit\Play_BanditSaori_Relationship	
+	282673930	Play_BanditSaori_Lobby5			\Default Work Unit\Play_BanditSaori_Lobby5	
+	282673932	Play_BanditSaori_Lobby3			\Default Work Unit\Play_BanditSaori_Lobby3	
+	315115324	Play_BanditSaori_Ex			\Default Work Unit\Play_BanditSaori_Ex	
+	428498956	Play_BanditSaori_Spawn			\Default Work Unit\Play_BanditSaori_Spawn	
+	646100179	Play_BanditSaori_LevelUp_Short			\Default Work Unit\Play_BanditSaori_LevelUp_Short	
+	747846829	Play_BanditSaori_TakeDamage			\Default Work Unit\Play_BanditSaori_TakeDamage	
+	1524576585	Play_BanditSaori_Lobby_xmas			\Default Work Unit\Play_BanditSaori_Lobby_xmas	
+	1592144286	Play_BanditSaori_Omoshiroi			\Default Work Unit\Play_BanditSaori_Omoshiroi	
+	1867135410	Play_BanditSaori_Relationship_Long			\Default Work Unit\Play_BanditSaori_Relationship_Long	
+	1874008181	Play_BanditSaori_LevelUp_Long			\Default Work Unit\Play_BanditSaori_LevelUp_Long	
+	1936509067	Play_BanditSaori_Memorial4			\Default Work Unit\Play_BanditSaori_Memorial4	
+	1936509069	Play_BanditSaori_Memorial2			\Default Work Unit\Play_BanditSaori_Memorial2	
+	1940720009	Play_BanditSaori_AcquireScepter			\Default Work Unit\Play_BanditSaori_AcquireScepter	
+	1999503173	Play_BanditSaori_Vanitas			\Default Work Unit\Play_BanditSaori_Vanitas	
+	2495075439	Play_BanditSaori_Cafe3			\Default Work Unit\Play_BanditSaori_Cafe3	
+	2651091939	Play_BanditSaori_Victory			\Default Work Unit\Play_BanditSaori_Victory	
+	2965978849	Play_BanditSaori_Lobby_Newyear			\Default Work Unit\Play_BanditSaori_Lobby_Newyear	
+	2992864584	Play_BanditSaori_Stealth			\Default Work Unit\Play_BanditSaori_Stealth	
+	3361595765	Play_BanditSaori_Lobby_Halloween			\Default Work Unit\Play_BanditSaori_Lobby_Halloween	
+	3442363452	Play_BanditSaori_Lobby_bday			\Default Work Unit\Play_BanditSaori_Lobby_bday	
+	3535401429	Play_BanditSaori_LowHealth			\Default Work Unit\Play_BanditSaori_LowHealth	
+	3838146946	Play_BanditSaori_Shout			\Default Work Unit\Play_BanditSaori_Shout	
+	3870420814	Play_BanditSaori_ExLevel			\Default Work Unit\Play_BanditSaori_ExLevel	
+	3890096652	Play_BanditSaori_Muda			\Default Work Unit\Play_BanditSaori_Muda	
+	4006376229	Play_BanditSaori_Lobby			\Default Work Unit\Play_BanditSaori_Lobby	
+	4123617662	Play_BanditSaori_VanitasFull			\Default Work Unit\Play_BanditSaori_VanitasFull	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3673881719	Volume_SFX			\Default Work Unit\Volume_SFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7389379	Saori_Season_Halloween	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Season_Halloween_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_Season_Halloween		559694
+	43302002	Saori_ExWeapon_Get	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_ExWeapon_Get_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_ExWeapon_Get		2035170
+	50623914	Saori_Growup_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Growup_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Short\Saori_Growup_2		125714
+	73085304	Saori_MemorialLobby_4_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_MemorialLobby_4_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Memorial4\Saori_MemorialLobby_4_3		393602
+	104656980	Saori_Growup_4	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Growup_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Long\Saori_Growup_4		553740
+	139339475	Saori_Battle_Damage_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Damage_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Hurt\Saori_Battle_Damage_1		44392
+	145984689	Saori_Cafe_monolog_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Cafe_monolog_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_Cafe_monolog_3		219388
+	173087257	Saori_Season_NewYear	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Season_NewYear_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_Season_NewYear		1380780
+	190664891	Saori_Season_Xmas	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Season_Xmas_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_Season_Xmas		1188284
+	246839549	Saori_ExSkill_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_ExSkill_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Ex\Saori_ExSkill_2		135508
+	274171975	Saori_Lobby_4	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Lobby_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Saori_Lobby_4		556222
+	287662408	Saori_LogIn_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_LogIn_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Saori_LogIn_2		637090
+	311966967	Saori_Battle_Shout_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Shout_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Shout\Saori_Battle_Shout_1		44892
+	314459040	Saori_Lobby_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Lobby_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Saori_Lobby_2		878078
+	334882985	Saori_Tactic_In_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Tactic_In_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Saori_Tactic_In_1		136996
+	355202324	Saori_Tactic_Victory_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Tactic_Victory_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Saori_Tactic_Victory_1		131538
+	356475054	Saori_Relationship_Up_4	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Relationship_Up_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Saori_Relationship_Up_4		348344
+	362920439	Saori_Relationship_Up_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Relationship_Up_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Saori_Relationship_Up_1		333846
+	392924616	Saori_Lobby_5	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Lobby_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Saori_Lobby_5		360068
+	393453105	Saori_Battle_Shout_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Shout_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Shout\Saori_Battle_Shout_3		59928
+	395501518	Saori_Battle_Move_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Move_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Stealth\Saori_Battle_Move_1		70018
+	419965893	Saori_Battle_Shout_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Shout_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Shout\Saori_Battle_Shout_2		46700
+	444182674	Saori_Battle_Victory_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Victory_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Saori_Battle_Victory_2		112190
+	446879545	Saori_Battle_Damage_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Damage_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Hurt\Saori_Battle_Damage_3		73026
+	481229989	Saori_Season_Birthday_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Season_Birthday_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Birthday\Saori_Season_Birthday_1		1285028
+	510991571	Saori_CommonSkill	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_CommonSkill_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Stealth\Saori_CommonSkill		77460
+	528706030	Saori_MemorialLobby_2_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_MemorialLobby_2_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Memorial2\Saori_MemorialLobby_2_2		431694
+	556435204	Saori_Battle_In_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_In_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Saori_Battle_In_1		187104
+	597146826	Saori_ExSkill_Level_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_ExSkill_Level_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExLevel\Saori_ExSkill_Level_3		157832
+	599737555	Saori_Relationship_Up_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Relationship_Up_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Saori_Relationship_Up_3		311632
+	635722642	Saori_Lobby_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Lobby_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Saori_Lobby_1		817678
+	696600494	Saori_Title	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Title_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_Title		118804
+	726567411	Saori_Battle_Damage_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Damage_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Hurt\Saori_Battle_Damage_2		90682
+	729463796	Saori_Growup_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Growup_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Short\Saori_Growup_1		144934
+	734012125	Saori_ExSkill_Level_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_ExSkill_Level_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExLevel\Saori_ExSkill_Level_2		62422
+	738388558	Saori_Lobby_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Lobby_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Saori_Lobby_3		435166
+	786203666	Saori_MemorialLobby_2_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_MemorialLobby_2_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Memorial2\Saori_MemorialLobby_2_1		214390
+	799420894	Saori_Battle_Victory_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_Victory_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Saori_Battle_Victory_1		270454
+	801804637	Saori_ExSkill_Level_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_ExSkill_Level_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExLevel\Saori_ExSkill_Level_1		189298
+	801927821	Saori_Growup_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Growup_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Long\Saori_Growup_3		606776
+	819043646	Saori_LogIn_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_LogIn_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Saori_LogIn_1		416314
+	819549019	Saori_Battle_TacticalAction_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_TacticalAction_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Stealth\Saori_Battle_TacticalAction_1		92118
+	846584939	Saori_Season_Birthday_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Season_Birthday_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Birthday\Saori_Season_Birthday_2		474360
+	870947300	Saori_Tactic_In_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Tactic_In_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Saori_Tactic_In_2		245646
+	910959289	Saori_ExSkill_3	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_ExSkill_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Ex\Saori_ExSkill_3		424252
+	971010640	Saori_MemorialLobby_4_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_MemorialLobby_4_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LowHealth\Saori_MemorialLobby_4_1		203972
+	996373495	Saori_Relationship_Up_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Relationship_Up_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_Relationship_Up_2		1110392
+	999505975	Saori_ExSkill_1	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_ExSkill_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Saori_ExSkill_1		284344
+	1021844675	Saori_Battle_In_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Battle_In_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Saori_Battle_In_2		154360
+	1050133791	Saori_Tactic_Victory_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_Tactic_Victory_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Saori_Tactic_Victory_2		114174
+	1072799129	Saori_MemorialLobby_4_2	C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\SFX\Saori_MemorialLobby_4_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Memorial4\Saori_MemorialLobby_4_2		397462
+

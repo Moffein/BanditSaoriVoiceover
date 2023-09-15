@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Node\RoR2 Mods\BanditSaoriVoiceover\BanditSaoriVoiceoverWWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="263542888">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2987602252" Language="SFX" Hash="4253668355">
+			<ObjectPath>\SoundBanks\Default Work Unit\BanditSaoriSoundbank</ObjectPath>
+			<ShortName>BanditSaoriSoundbank</ShortName>
+			<Path>BanditSaoriSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1940720009" Name="Play_BanditSaori_AcquireScepter" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_AcquireScepter">
+					<IncludedMemoryFiles>
+						<File Id="43302002" Language="SFX">
+							<ShortName>Saori_ExWeapon_Get.wav</ShortName>
+							<Path>SFX\Saori_ExWeapon_Get_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2495075439" Name="Play_BanditSaori_Cafe3" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Cafe3">
+					<IncludedMemoryFiles>
+						<File Id="145984689" Language="SFX">
+							<ShortName>Saori_Cafe_monolog_3.wav</ShortName>
+							<Path>SFX\Saori_Cafe_monolog_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="315115324" Name="Play_BanditSaori_Ex" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Ex">
+					<IncludedMemoryFiles>
+						<File Id="246839549" Language="SFX">
+							<ShortName>Saori_ExSkill_2.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_2_10C4C929.wem</Path>
+						</File>
+						<File Id="910959289" Language="SFX">
+							<ShortName>Saori_ExSkill_3.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_3_10C4C929.wem</Path>
+						</File>
+						<File Id="999505975" Language="SFX">
+							<ShortName>Saori_ExSkill_1.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3870420814" Name="Play_BanditSaori_ExLevel" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_ExLevel">
+					<IncludedMemoryFiles>
+						<File Id="597146826" Language="SFX">
+							<ShortName>Saori_ExSkill_Level_3.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_Level_3_10C4C929.wem</Path>
+						</File>
+						<File Id="734012125" Language="SFX">
+							<ShortName>Saori_ExSkill_Level_2.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_Level_2_10C4C929.wem</Path>
+						</File>
+						<File Id="801804637" Language="SFX">
+							<ShortName>Saori_ExSkill_Level_1.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1874008181" Name="Play_BanditSaori_LevelUp_Long" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_LevelUp_Long">
+					<IncludedMemoryFiles>
+						<File Id="104656980" Language="SFX">
+							<ShortName>Saori_Growup_4.wav</ShortName>
+							<Path>SFX\Saori_Growup_4_10C4C929.wem</Path>
+						</File>
+						<File Id="801927821" Language="SFX">
+							<ShortName>Saori_Growup_3.wav</ShortName>
+							<Path>SFX\Saori_Growup_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="646100179" Name="Play_BanditSaori_LevelUp_Short" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_LevelUp_Short">
+					<IncludedMemoryFiles>
+						<File Id="50623914" Language="SFX">
+							<ShortName>Saori_Growup_2.wav</ShortName>
+							<Path>SFX\Saori_Growup_2_10C4C929.wem</Path>
+						</File>
+						<File Id="729463796" Language="SFX">
+							<ShortName>Saori_Growup_1.wav</ShortName>
+							<Path>SFX\Saori_Growup_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4006376229" Name="Play_BanditSaori_Lobby" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Lobby">
+					<IncludedMemoryFiles>
+						<File Id="274171975" Language="SFX">
+							<ShortName>Saori_Lobby_4.wav</ShortName>
+							<Path>SFX\Saori_Lobby_4_10C4C929.wem</Path>
+						</File>
+						<File Id="287662408" Language="SFX">
+							<ShortName>Saori_LogIn_2.wav</ShortName>
+							<Path>SFX\Saori_LogIn_2_10C4C929.wem</Path>
+						</File>
+						<File Id="314459040" Language="SFX">
+							<ShortName>Saori_Lobby_2.wav</ShortName>
+							<Path>SFX\Saori_Lobby_2_10C4C929.wem</Path>
+						</File>
+						<File Id="392924616" Language="SFX">
+							<ShortName>Saori_Lobby_5.wav</ShortName>
+							<Path>SFX\Saori_Lobby_5_10C4C929.wem</Path>
+						</File>
+						<File Id="635722642" Language="SFX">
+							<ShortName>Saori_Lobby_1.wav</ShortName>
+							<Path>SFX\Saori_Lobby_1_10C4C929.wem</Path>
+						</File>
+						<File Id="738388558" Language="SFX">
+							<ShortName>Saori_Lobby_3.wav</ShortName>
+							<Path>SFX\Saori_Lobby_3_10C4C929.wem</Path>
+						</File>
+						<File Id="819043646" Language="SFX">
+							<ShortName>Saori_LogIn_1.wav</ShortName>
+							<Path>SFX\Saori_LogIn_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="282673932" Name="Play_BanditSaori_Lobby3" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Lobby3">
+					<IncludedMemoryFiles>
+						<File Id="738388558" Language="SFX">
+							<ShortName>Saori_Lobby_3.wav</ShortName>
+							<Path>SFX\Saori_Lobby_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="282673930" Name="Play_BanditSaori_Lobby5" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Lobby5">
+					<IncludedMemoryFiles>
+						<File Id="392924616" Language="SFX">
+							<ShortName>Saori_Lobby_5.wav</ShortName>
+							<Path>SFX\Saori_Lobby_5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3442363452" Name="Play_BanditSaori_Lobby_bday" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Lobby_bday">
+					<IncludedMemoryFiles>
+						<File Id="481229989" Language="SFX">
+							<ShortName>Saori_Season_Birthday_1.wav</ShortName>
+							<Path>SFX\Saori_Season_Birthday_1_10C4C929.wem</Path>
+						</File>
+						<File Id="846584939" Language="SFX">
+							<ShortName>Saori_Season_Birthday_2.wav</ShortName>
+							<Path>SFX\Saori_Season_Birthday_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3361595765" Name="Play_BanditSaori_Lobby_Halloween" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Lobby_Halloween">
+					<IncludedMemoryFiles>
+						<File Id="7389379" Language="SFX">
+							<ShortName>Saori_Season_Halloween.wav</ShortName>
+							<Path>SFX\Saori_Season_Halloween_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2965978849" Name="Play_BanditSaori_Lobby_Newyear" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Lobby_Newyear">
+					<IncludedMemoryFiles>
+						<File Id="173087257" Language="SFX">
+							<ShortName>Saori_Season_NewYear.wav</ShortName>
+							<Path>SFX\Saori_Season_NewYear_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1524576585" Name="Play_BanditSaori_Lobby_xmas" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Lobby_xmas">
+					<IncludedMemoryFiles>
+						<File Id="190664891" Language="SFX">
+							<ShortName>Saori_Season_Xmas.wav</ShortName>
+							<Path>SFX\Saori_Season_Xmas_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3535401429" Name="Play_BanditSaori_LowHealth" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_LowHealth">
+					<IncludedMemoryFiles>
+						<File Id="786203666" Language="SFX">
+							<ShortName>Saori_MemorialLobby_2_1.wav</ShortName>
+							<Path>SFX\Saori_MemorialLobby_2_1_10C4C929.wem</Path>
+						</File>
+						<File Id="971010640" Language="SFX">
+							<ShortName>Saori_MemorialLobby_4_1.wav</ShortName>
+							<Path>SFX\Saori_MemorialLobby_4_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1936509069" Name="Play_BanditSaori_Memorial2" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Memorial2">
+					<IncludedMemoryFiles>
+						<File Id="528706030" Language="SFX">
+							<ShortName>Saori_MemorialLobby_2_2.wav</ShortName>
+							<Path>SFX\Saori_MemorialLobby_2_2_10C4C929.wem</Path>
+						</File>
+						<File Id="786203666" Language="SFX">
+							<ShortName>Saori_MemorialLobby_2_1.wav</ShortName>
+							<Path>SFX\Saori_MemorialLobby_2_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1936509067" Name="Play_BanditSaori_Memorial4" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Memorial4">
+					<IncludedMemoryFiles>
+						<File Id="73085304" Language="SFX">
+							<ShortName>Saori_MemorialLobby_4_3.wav</ShortName>
+							<Path>SFX\Saori_MemorialLobby_4_3_10C4C929.wem</Path>
+						</File>
+						<File Id="971010640" Language="SFX">
+							<ShortName>Saori_MemorialLobby_4_1.wav</ShortName>
+							<Path>SFX\Saori_MemorialLobby_4_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1072799129" Language="SFX">
+							<ShortName>Saori_MemorialLobby_4_2.wav</ShortName>
+							<Path>SFX\Saori_MemorialLobby_4_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3890096652" Name="Play_BanditSaori_Muda" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Muda">
+					<IncludedMemoryFiles>
+						<File Id="510991571" Language="SFX">
+							<ShortName>Saori_CommonSkill.wav</ShortName>
+							<Path>SFX\Saori_CommonSkill_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1592144286" Name="Play_BanditSaori_Omoshiroi" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Omoshiroi">
+					<IncludedMemoryFiles>
+						<File Id="819549019" Language="SFX">
+							<ShortName>Saori_Battle_TacticalAction_1.wav</ShortName>
+							<Path>SFX\Saori_Battle_TacticalAction_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="100544925" Name="Play_BanditSaori_Relationship" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Relationship">
+					<IncludedMemoryFiles>
+						<File Id="356475054" Language="SFX">
+							<ShortName>Saori_Relationship_Up_4.wav</ShortName>
+							<Path>SFX\Saori_Relationship_Up_4_10C4C929.wem</Path>
+						</File>
+						<File Id="362920439" Language="SFX">
+							<ShortName>Saori_Relationship_Up_1.wav</ShortName>
+							<Path>SFX\Saori_Relationship_Up_1_10C4C929.wem</Path>
+						</File>
+						<File Id="599737555" Language="SFX">
+							<ShortName>Saori_Relationship_Up_3.wav</ShortName>
+							<Path>SFX\Saori_Relationship_Up_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1867135410" Name="Play_BanditSaori_Relationship_Long" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Relationship_Long">
+					<IncludedMemoryFiles>
+						<File Id="996373495" Language="SFX">
+							<ShortName>Saori_Relationship_Up_2.wav</ShortName>
+							<Path>SFX\Saori_Relationship_Up_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3838146946" Name="Play_BanditSaori_Shout" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Shout">
+					<IncludedMemoryFiles>
+						<File Id="311966967" Language="SFX">
+							<ShortName>Saori_Battle_Shout_1.wav</ShortName>
+							<Path>SFX\Saori_Battle_Shout_1_10C4C929.wem</Path>
+						</File>
+						<File Id="393453105" Language="SFX">
+							<ShortName>Saori_Battle_Shout_3.wav</ShortName>
+							<Path>SFX\Saori_Battle_Shout_3_10C4C929.wem</Path>
+						</File>
+						<File Id="419965893" Language="SFX">
+							<ShortName>Saori_Battle_Shout_2.wav</ShortName>
+							<Path>SFX\Saori_Battle_Shout_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="428498956" Name="Play_BanditSaori_Spawn" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Spawn">
+					<IncludedMemoryFiles>
+						<File Id="334882985" Language="SFX">
+							<ShortName>Saori_Tactic_In_1.wav</ShortName>
+							<Path>SFX\Saori_Tactic_In_1_10C4C929.wem</Path>
+						</File>
+						<File Id="556435204" Language="SFX">
+							<ShortName>Saori_Battle_In_1.wav</ShortName>
+							<Path>SFX\Saori_Battle_In_1_10C4C929.wem</Path>
+						</File>
+						<File Id="870947300" Language="SFX">
+							<ShortName>Saori_Tactic_In_2.wav</ShortName>
+							<Path>SFX\Saori_Tactic_In_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1021844675" Language="SFX">
+							<ShortName>Saori_Battle_In_2.wav</ShortName>
+							<Path>SFX\Saori_Battle_In_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2992864584" Name="Play_BanditSaori_Stealth" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Stealth">
+					<IncludedMemoryFiles>
+						<File Id="395501518" Language="SFX">
+							<ShortName>Saori_Battle_Move_1.wav</ShortName>
+							<Path>SFX\Saori_Battle_Move_1_10C4C929.wem</Path>
+						</File>
+						<File Id="510991571" Language="SFX">
+							<ShortName>Saori_CommonSkill.wav</ShortName>
+							<Path>SFX\Saori_CommonSkill_10C4C929.wem</Path>
+						</File>
+						<File Id="819549019" Language="SFX">
+							<ShortName>Saori_Battle_TacticalAction_1.wav</ShortName>
+							<Path>SFX\Saori_Battle_TacticalAction_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="747846829" Name="Play_BanditSaori_TakeDamage" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_TakeDamage">
+					<IncludedMemoryFiles>
+						<File Id="139339475" Language="SFX">
+							<ShortName>Saori_Battle_Damage_1.wav</ShortName>
+							<Path>SFX\Saori_Battle_Damage_1_10C4C929.wem</Path>
+						</File>
+						<File Id="446879545" Language="SFX">
+							<ShortName>Saori_Battle_Damage_3.wav</ShortName>
+							<Path>SFX\Saori_Battle_Damage_3_10C4C929.wem</Path>
+						</File>
+						<File Id="726567411" Language="SFX">
+							<ShortName>Saori_Battle_Damage_2.wav</ShortName>
+							<Path>SFX\Saori_Battle_Damage_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="22440388" Name="Play_BanditSaori_TitleDrop" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_TitleDrop">
+					<IncludedMemoryFiles>
+						<File Id="696600494" Language="SFX">
+							<ShortName>Saori_Title.wav</ShortName>
+							<Path>SFX\Saori_Title_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1999503173" Name="Play_BanditSaori_Vanitas" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Vanitas">
+					<IncludedMemoryFiles>
+						<File Id="246839549" Language="SFX">
+							<ShortName>Saori_ExSkill_2.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4123617662" Name="Play_BanditSaori_VanitasFull" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_VanitasFull">
+					<IncludedMemoryFiles>
+						<File Id="999505975" Language="SFX">
+							<ShortName>Saori_ExSkill_1.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2651091939" Name="Play_BanditSaori_Victory" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Victory">
+					<IncludedMemoryFiles>
+						<File Id="355202324" Language="SFX">
+							<ShortName>Saori_Tactic_Victory_1.wav</ShortName>
+							<Path>SFX\Saori_Tactic_Victory_1_10C4C929.wem</Path>
+						</File>
+						<File Id="444182674" Language="SFX">
+							<ShortName>Saori_Battle_Victory_2.wav</ShortName>
+							<Path>SFX\Saori_Battle_Victory_2_10C4C929.wem</Path>
+						</File>
+						<File Id="799420894" Language="SFX">
+							<ShortName>Saori_Battle_Victory_1.wav</ShortName>
+							<Path>SFX\Saori_Battle_Victory_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1050133791" Language="SFX">
+							<ShortName>Saori_Tactic_Victory_2.wav</ShortName>
+							<Path>SFX\Saori_Tactic_Victory_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="Volume_SFX" ObjectPath="\Game Parameters\Default Work Unit\Volume_SFX"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
