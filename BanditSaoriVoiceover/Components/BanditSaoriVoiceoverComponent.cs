@@ -17,7 +17,7 @@ namespace BanditSaoriVoiceover.Components
         private float blockedCooldown = 0f;
         private float lowHealthCooldown = 0f;
         private float specialCooldown = 0f;
-        private float utilityCooldown = 0f;
+        //private float utilityCooldown = 0f;
 
         private bool acquiredScepter = false;
 
@@ -41,7 +41,7 @@ namespace BanditSaoriVoiceover.Components
         {
             base.FixedUpdate();
             if (specialCooldown > 0f) specialCooldown -= Time.fixedDeltaTime;
-            if (utilityCooldown > 0f) utilityCooldown -= Time.fixedDeltaTime;
+            //if (utilityCooldown > 0f) utilityCooldown -= Time.fixedDeltaTime;
             if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
             if (blockedCooldown > 0f) blockedCooldown -= Time.fixedDeltaTime;
             if (lowHealthCooldown > 0f) lowHealthCooldown -= Time.fixedDeltaTime;
@@ -140,12 +140,14 @@ namespace BanditSaoriVoiceover.Components
             TryPlaySound("Play_BanditSaori_Ex", 4.4f, true);
         }
 
-        public override void PlayUtilityAuthority()
+        //Seemed unfitting
+        /*public override void PlayUtilityAuthority()
         {
             if (utilityCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseStealth, 1.9f, false);
             if (played) utilityCooldown = 30f;
-        }
+        }*/
+        public override void PlayUtilityAuthority() { }
 
         public override void PlayVictory()
         {

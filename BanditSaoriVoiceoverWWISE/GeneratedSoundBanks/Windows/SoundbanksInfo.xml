@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2987602252" Language="SFX" Hash="4253668355">
+		<SoundBank Id="2987602252" Language="SFX" Hash="149062445">
 			<ObjectPath>\SoundBanks\Default Work Unit\BanditSaoriSoundbank</ObjectPath>
 			<ShortName>BanditSaoriSoundbank</ShortName>
 			<Path>BanditSaoriSoundbank.bnk</Path>
