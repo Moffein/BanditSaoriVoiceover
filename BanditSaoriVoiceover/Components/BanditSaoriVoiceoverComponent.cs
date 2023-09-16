@@ -127,18 +127,7 @@ namespace BanditSaoriVoiceover.Components
         public override void PlaySpecialAuthority()
         {
             if (specialCooldown > 0f) return;
-            bool played;
-
-            if (Util.CheckRoll(80f))
-            {
-                played = TryPlayNetworkSound(nseExLevel, 1.9f, false);
-            }
-            else
-            {
-                played = TryPlayNetworkSound(nseEx, 4.4f, false);
-            }
-
-            if (played) specialCooldown = 8f;
+            if (TryPlayNetworkSound(nseExLevel, 1.9f, false)) specialCooldown = 8f;
         }
 
         public override void PlayTeleporterFinish()
