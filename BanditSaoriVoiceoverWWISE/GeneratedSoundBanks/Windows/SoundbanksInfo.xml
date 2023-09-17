@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2987602252" Language="SFX" Hash="2593747836">
+		<SoundBank Id="2987602252" Language="SFX" Hash="2340490903">
 			<ObjectPath>\SoundBanks\Default Work Unit\BanditSaoriSoundbank</ObjectPath>
 			<ShortName>BanditSaoriSoundbank</ShortName>
 			<Path>BanditSaoriSoundbank.bnk</Path>
@@ -98,6 +98,22 @@
 						<File Id="801804637" Language="SFX">
 							<ShortName>Saori_ExSkill_Level_1.wav</ShortName>
 							<Path>SFX\Saori_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3155221007" Name="Play_BanditSaori_Formation_Select" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Formation_Select">
+					<IncludedMemoryFiles>
+						<File Id="944232760" Language="SFX">
+							<ShortName>Saori_Formation_Select.wav</ShortName>
+							<Path>SFX\Saori_Formation_Select_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="683684503" Name="Play_BanditSaori_Intro" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Intro">
+					<IncludedMemoryFiles>
+						<File Id="573440324" Language="SFX">
+							<ShortName>Saori_Gachaget.wav</ShortName>
+							<Path>SFX\Saori_Gachaget_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

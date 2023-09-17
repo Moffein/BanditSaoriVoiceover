@@ -19,6 +19,8 @@
 						<ObjectRef Name="Play_BanditSaori_Spawn" ID="{2BAB574F-1691-448E-9EE9-E8A139CF644F}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Muda" ID="{8FBA7E2E-A31F-457C-B56D-0D9841C52C75}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Shout" ID="{B9F93EBB-6400-45BB-BE14-EC08093A4FA3}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BanditSaori_Formation_Select" ID="{5B1584CA-47F0-467D-ACEB-CD9EEA977E98}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BanditSaori_Intro" ID="{60A9AC67-9FC1-46AE-B222-CB674AE72920}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_TakeDamage" ID="{9B65EB92-185B-47C1-85C2-16A41C411FE2}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Yes" ID="{3DF8042E-3212-4802-9D71-0D309F590B8C}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby3" ID="{1472D4DC-1B3B-4928-8BAB-B6705189E988}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>

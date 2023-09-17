@@ -15,7 +15,9 @@
 				<Property Name="Event Action List\{2BAB574F-1691-448E-9EE9-E8A139CF644F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2C72C2D8-17E5-4AA3-B4FD-8DD4A18DD674}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3DF8042E-3212-4802-9D71-0D309F590B8C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5B1584CA-47F0-467D-ACEB-CD9EEA977E98}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5D0393CE-D3C7-4978-8E21-D548123AB38E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{60A9AC67-9FC1-46AE-B222-CB674AE72920}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{675F4899-C170-4ACA-80DC-76C7F76B9AD1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{792C5D71-1693-43D7-899F-06DD46A7ED08}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7C96B205-97EE-4DD9-BEA1-F83585E72A1A}\x64_Expand States" Type="string" Value=""/>
@@ -66,7 +68,7 @@
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{05971689-3463-4404-BAFC-05D760DE5B4E}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{F10BEB60-1F94-42E6-A567-A1E5D0413E3B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
