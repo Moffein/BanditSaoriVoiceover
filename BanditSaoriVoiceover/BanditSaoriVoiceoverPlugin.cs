@@ -86,104 +86,72 @@ namespace BanditSaoriVoiceover
 
         private void OnLoad()
         {
-            bool foundSkin = false;
-
+            SkinDef saoriSkin = null;
             SkinDef[] skins = SkinCatalog.FindSkinsForBody(BodyCatalog.FindBodyIndex("Bandit2Body"));
             foreach (SkinDef skinDef in skins)
             {
                 if (skinDef.name == "SayoriSkin")
                 {
-                    foundSkin = true;
-                    BanditSaoriVoiceoverComponent.requiredSkinDefs.Add(skinDef);
+                    saoriSkin = skinDef;
                     break;
                 }
             }
 
-            if (!foundSkin)
+            if (!saoriSkin)
             {
                 Debug.LogError("BanditSaoriVoiceover: Bandit Saori SkinDef not found. Voicelines will not work!");
             }
-            else if (survivorDef)
+            else
             {
-                On.RoR2.CharacterBody.Start += AttachVoiceoverComponent;
-                On.RoR2.SurvivorMannequins.SurvivorMannequinSlotController.RebuildMannequinInstance += (orig, self) =>
-                {
-                    orig(self);
-                    if (self.currentSurvivorDef == survivorDef)
-                    {
-                        //Loadout isn't loaded first time this is called, so we need to manually get it.
-                        //Probably not the most elegant way to resolve this.
-                        if (self.loadoutDirty)
-                        {
-                            if (self.networkUser)
-                            {
-                                self.networkUser.networkLoadout.CopyLoadout(self.currentLoadout);
-                            }
-                        }
-
-                        //Check SkinDef
-                        BodyIndex bodyIndexFromSurvivorIndex = SurvivorCatalog.GetBodyIndexFromSurvivorIndex(self.currentSurvivorDef.survivorIndex);
-                        int skinIndex = (int)self.currentLoadout.bodyLoadoutManager.GetSkinIndex(bodyIndexFromSurvivorIndex);
-                        SkinDef safe = HG.ArrayUtils.GetSafe<SkinDef>(BodyCatalog.GetBodySkins(bodyIndexFromSurvivorIndex), skinIndex);
-                        if (true && enableVoicelines.Value)// && BanditSaoriVoiceoverComponent.requiredSkinDefs.Contains(safe)
-                        {
-                            bool played = false;
-                            if (!playedSeasonalVoiceline)
-                            {
-                                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
-                                {
-                                    Util.PlaySound("Play_BanditSaori_Lobby_Newyear", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 9 && System.DateTime.Today.Day == 3)
-                                {
-                                    Util.PlaySound("Play_BanditSaori_Lobby_bday", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 10 && System.DateTime.Today.Day == 31)
-                                {
-                                    Util.PlaySound("Play_BanditSaori_Lobby_Halloween", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
-                                {
-                                    Util.PlaySound("Play_BanditSaori_Lobby_xmas", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-
-                                if (played)
-                                {
-                                    playedSeasonalVoiceline = true;
-                                }
-                            }
-                            if (!played)
-                            {
-                                if (Util.CheckRoll(5f))
-                                {
-                                    Util.PlaySound("Play_BanditSaori_TitleDrop", self.mannequinInstanceTransform.gameObject);
-                                }
-                                else
-                                {
-                                    Util.PlaySound("Play_BanditSaori_Lobby", self.mannequinInstanceTransform.gameObject);
-                                }
-                            }
-                        }
-                    }
-                };
+                VoiceoverInfo voiceoverInfo = new VoiceoverInfo(typeof(BanditSaoriVoiceoverComponent), saoriSkin, "Bandit2Body");
+                voiceoverInfo.selectActions += SaoriSelect;
             }
 
             RefreshNSE();
         }
 
-        private void AttachVoiceoverComponent(On.RoR2.CharacterBody.orig_Start orig, CharacterBody self)
+        private void SaoriSelect(GameObject mannequinObject)
         {
-            orig(self);
-            if (self)
+            if (!enableVoicelines.Value) return;
+            
+            bool played = false;
+            if (!playedSeasonalVoiceline)
             {
-                if (self.bodyIndex == BodyCatalog.FindBodyIndex("Bandit2Body") && (BanditSaoriVoiceoverComponent.requiredSkinDefs.Contains(SkinCatalog.GetBodySkinDef(self.bodyIndex, (int)self.skinIndex))))
+                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
                 {
-                    BaseVoiceoverComponent existingVoiceoverComponent = self.GetComponent<BaseVoiceoverComponent>();
-                    if (!existingVoiceoverComponent) self.gameObject.AddComponent<BanditSaoriVoiceoverComponent>();
+                    Util.PlaySound("Play_BanditSaori_Lobby_Newyear", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 9 && System.DateTime.Today.Day == 3)
+                {
+                    Util.PlaySound("Play_BanditSaori_Lobby_bday", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 10 && System.DateTime.Today.Day == 31)
+                {
+                    Util.PlaySound("Play_BanditSaori_Lobby_Halloween", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                {
+                    Util.PlaySound("Play_BanditSaori_Lobby_xmas", mannequinObject);
+                    played = true;
+                }
+
+                if (played)
+                {
+                    playedSeasonalVoiceline = true;
+                }
+            }
+            if (!played)
+            {
+                if (Util.CheckRoll(5f))
+                {
+                    Util.PlaySound("Play_BanditSaori_TitleDrop", mannequinObject);
+                }
+                else
+                {
+                    Util.PlaySound("Play_BanditSaori_Lobby", mannequinObject);
                 }
             }
         }

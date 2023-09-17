@@ -9,8 +9,6 @@ namespace BanditSaoriVoiceover.Components
 {
     public class BanditSaoriVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static List<SkinDef> requiredSkinDefs = new List<SkinDef>();
-
         public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseYes, nseThanks;
 
         private float levelCooldown = 0f;
