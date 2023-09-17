@@ -9,7 +9,7 @@ namespace BanditSaoriVoiceover.Components
 {
     public class BanditSaoriVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseYes, nseThanks, nseTitle, nseIntro, nseFormation;
+        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseThanks, nseTitle, nseIntro, nseFormation;
 
         private float levelCooldown = 0f;
         private float blockedCooldown = 0f;
@@ -226,10 +226,6 @@ namespace BanditSaoriVoiceover.Components
             else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonMunashii))
             {
                 TryPlayNetworkSound(nseMunashii, 4.5f, false);
-            }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonYes))
-            {
-                TryPlayNetworkSound(nseYes, 0.5f, false);
             }
             else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonThanks))
             {

@@ -19,7 +19,7 @@ namespace BanditSaoriVoiceover
     [BepInPlugin("com.Schale.BanditSaoriVoiceover", "BanditSaoriVoiceover", "1.0.0")]
     public class BanditSaoriVoiceoverPlugin : BaseUnityPlugin
     {
-        public static ConfigEntry<KeyboardShortcut> buttonVanitas, buttonVanitasFull, buttonMuda, buttonHurt, buttonOmoshiroi, buttonMunashii, buttonYes, buttonThanks, buttonTitle, buttonIntro, buttonFormation;
+        public static ConfigEntry<KeyboardShortcut> buttonVanitas, buttonVanitasFull, buttonMuda, buttonHurt, buttonOmoshiroi, buttonMunashii, buttonThanks, buttonTitle, buttonIntro, buttonFormation;
 
         public static ConfigEntry<bool> enableVoicelines;
         public static bool playedSeasonalVoiceline = false;
@@ -48,7 +48,6 @@ namespace BanditSaoriVoiceover
             buttonOmoshiroi = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Omoshiroi"), KeyboardShortcut.Empty);
             buttonHurt = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Hurt"), KeyboardShortcut.Empty);
             buttonMunashii = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Munashii"), KeyboardShortcut.Empty);
-            buttonYes = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Yes"), KeyboardShortcut.Empty);
             buttonThanks = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Thanks"), KeyboardShortcut.Empty);
             buttonTitle = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Blue Archive"), KeyboardShortcut.Empty);
             buttonIntro = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Introduction"), KeyboardShortcut.Empty);
@@ -83,7 +82,6 @@ namespace BanditSaoriVoiceover
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMunashii));
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMuda));
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonOmoshiroi));
-            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonYes));
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonThanks));
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonHurt));
 
@@ -175,7 +173,6 @@ namespace BanditSaoriVoiceover
             BanditSaoriVoiceoverComponent.nseHurt = RegisterNSE("Play_BanditSaori_TakeDamage");
             BanditSaoriVoiceoverComponent.nseOmoshiroi = RegisterNSE("Play_BanditSaori_Omoshiroi");
             BanditSaoriVoiceoverComponent.nseMunashii = RegisterNSE("Play_BanditSaori_Munashii");
-            BanditSaoriVoiceoverComponent.nseYes = RegisterNSE("Play_BanditSaori_Yes");
             BanditSaoriVoiceoverComponent.nseThanks = RegisterNSE("Play_BanditSaori_Thanks");
             BanditSaoriVoiceoverComponent.nseTitle = RegisterNSE("Play_BanditSaori_TitleDrop");
             BanditSaoriVoiceoverComponent.nseIntro = RegisterNSE("Play_BanditSaori_Intro");
