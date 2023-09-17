@@ -235,6 +235,10 @@ namespace BanditSaoriVoiceover.Components
             {
                 TryPlayNetworkSound(nseThanks, 1.5f, false);
             }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonTitle))
+            {
+                TryPlayNetworkSound(nseTitle, 1f, false);
+            }
         }
     }
 }
