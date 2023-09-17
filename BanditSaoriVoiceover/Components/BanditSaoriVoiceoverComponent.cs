@@ -98,7 +98,7 @@ namespace BanditSaoriVoiceover.Components
             if (playedSound) lowHealthCooldown = 60f;
         }
 
-        public override void PlaySecondaryAuthority()
+        public override void PlaySecondaryAuthority(GenericSkill skill)
         {
             TryPlayNetworkSound(nseShout, 0f, false);
         }
@@ -108,7 +108,7 @@ namespace BanditSaoriVoiceover.Components
             TryPlaySound("Play_BanditSaori_Spawn", 2.4f, true);
         }
 
-        public override void PlaySpecialAuthority()
+        public override void PlaySpecialAuthority(GenericSkill skill)
         {
             if (specialCooldown > 0f) return;
             if (TryPlayNetworkSound(nseExLevel, 1.9f, false)) specialCooldown = 10f;
