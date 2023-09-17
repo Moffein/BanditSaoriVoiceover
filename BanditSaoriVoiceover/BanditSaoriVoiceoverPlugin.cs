@@ -1,5 +1,6 @@
 ﻿using BanditSaoriVoiceover.Components;
 using BanditSaoriVoiceoverPlugin.Modules;
+using BaseVoiceoverLib;
 using BepInEx;
 using BepInEx.Configuration;
 using RoR2;
@@ -14,9 +15,12 @@ namespace BanditSaoriVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Bread.BanditSaoriSkin", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin("com.Schale.BanditSaoriVoiceover", "BanditSaoriVoiceover", "1.0.0")]
     public class BanditSaoriVoiceoverPlugin : BaseUnityPlugin
     {
+        public static ConfigEntry<KeyboardShortcut> buttonVanitas, buttonVanitasFull, buttonMuda, buttonHurt, buttonOmoshiroi, buttonMunashii, buttonYes, buttonThanks;
+
         public static ConfigEntry<bool> enableVoicelines;
         public static bool playedSeasonalVoiceline = false;
         public static AssetBundle assetBundle;
@@ -25,7 +29,6 @@ namespace BanditSaoriVoiceover
         public void Awake()
         {
             Files.PluginInfo = this.Info;
-            BaseVoiceoverComponent.Init();
             RoR2.RoR2Application.onLoad += OnLoad;
             new Content().Initialize();
 
@@ -38,6 +41,16 @@ namespace BanditSaoriVoiceover
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the BanditSaori Skin."));
             enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
+
+            buttonVanitas = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Vanitas Vanitatum"), KeyboardShortcut.Empty);
+            buttonVanitasFull = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Vanitas Vanitatum, et Omnia Vanitas"), KeyboardShortcut.Empty);
+            buttonMuda = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Muda da"), KeyboardShortcut.Empty);
+            buttonOmoshiroi = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Omoshiroi"), KeyboardShortcut.Empty);
+            buttonHurt = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Hurt"), KeyboardShortcut.Empty);
+            buttonMunashii = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Munashii"), KeyboardShortcut.Empty);
+            buttonYes = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Yes"), KeyboardShortcut.Empty);
+            buttonThanks = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Thanks"), KeyboardShortcut.Empty);
+
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
                 RiskOfOptionsCompat();
@@ -58,6 +71,16 @@ namespace BanditSaoriVoiceover
         private void RiskOfOptionsCompat()
         {
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.CheckBoxOption(enableVoicelines));
+
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonVanitas));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonVanitasFull));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMuda));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonHurt));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonOmoshiroi));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMunashii));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonYes));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonThanks));
+
             RiskOfOptions.ModSettingsManager.SetModIcon(assetBundle.LoadAsset<Sprite>("texIconSaori"));
         }
 
@@ -148,14 +171,7 @@ namespace BanditSaoriVoiceover
                     }
                 };
             }
-            BanditSaoriVoiceoverComponent.ScepterIndex = ItemCatalog.FindItemIndex("ITEM_ANCIENT_SCEPTER");
 
-            //Add NSE here
-            nseList.Add(new NSEInfo(BanditSaoriVoiceoverComponent.nseShout));
-            nseList.Add(new NSEInfo(BanditSaoriVoiceoverComponent.nseStealth));
-            nseList.Add(new NSEInfo(BanditSaoriVoiceoverComponent.nseBlock));
-            nseList.Add(new NSEInfo(BanditSaoriVoiceoverComponent.nseExLevel));
-            nseList.Add(new NSEInfo(BanditSaoriVoiceoverComponent.nseEx));
             RefreshNSE();
         }
 
@@ -164,7 +180,7 @@ namespace BanditSaoriVoiceover
             orig(self);
             if (self)
             {
-                if (self.bodyIndex == BodyCatalog.FindBodyIndex("Bandit2Body"))// && (BanditSaoriVoiceoverComponent.requiredSkinDefs.Contains(SkinCatalog.GetBodySkinDef(self.bodyIndex, (int)self.skinIndex)))
+                if (self.bodyIndex == BodyCatalog.FindBodyIndex("Bandit2Body") && (BanditSaoriVoiceoverComponent.requiredSkinDefs.Contains(SkinCatalog.GetBodySkinDef(self.bodyIndex, (int)self.skinIndex))))
                 {
                     BaseVoiceoverComponent existingVoiceoverComponent = self.GetComponent<BaseVoiceoverComponent>();
                     if (!existingVoiceoverComponent) self.gameObject.AddComponent<BanditSaoriVoiceoverComponent>();
@@ -174,25 +190,28 @@ namespace BanditSaoriVoiceover
 
         private void InitNSE()
         {
-            BanditSaoriVoiceoverComponent.nseShout = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            BanditSaoriVoiceoverComponent.nseShout.eventName = "Play_BanditSaori_Shout";
-            Content.networkSoundEventDefs.Add(BanditSaoriVoiceoverComponent.nseShout);
+            BanditSaoriVoiceoverComponent.nseShout = RegisterNSE("Play_BanditSaori_Shout");
+            BanditSaoriVoiceoverComponent.nseStealth = RegisterNSE("Play_BanditSaori_Stealth");
+            BanditSaoriVoiceoverComponent.nseBlock = RegisterNSE("Play_BanditSaori_Block");
+            BanditSaoriVoiceoverComponent.nseEx = RegisterNSE("Play_BanditSaori_Ex");
+            BanditSaoriVoiceoverComponent.nseExLevel = RegisterNSE("Play_BanditSaori_ExLevel");
+            BanditSaoriVoiceoverComponent.nseVanitas = RegisterNSE("Play_BanditSaori_Vanitas");
+            BanditSaoriVoiceoverComponent.nseVanitasFull = RegisterNSE("Play_BanditSaori_VanitasFull");
+            BanditSaoriVoiceoverComponent.nseMuda = RegisterNSE("Play_BanditSaori_Muda");
+            BanditSaoriVoiceoverComponent.nseHurt = RegisterNSE("Play_BanditSaori_TakeDamage");
+            BanditSaoriVoiceoverComponent.nseOmoshiroi = RegisterNSE("Play_BanditSaori_Omoshiroi");
+            BanditSaoriVoiceoverComponent.nseMunashii = RegisterNSE("Play_BanditSaori_Munashii");
+            BanditSaoriVoiceoverComponent.nseYes = RegisterNSE("Play_BanditSaori_Yes");
+            BanditSaoriVoiceoverComponent.nseThanks = RegisterNSE("Play_BanditSaori_Thanks");
+        }
 
-            BanditSaoriVoiceoverComponent.nseStealth = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            BanditSaoriVoiceoverComponent.nseStealth.eventName = "Play_BanditSaori_Stealth";
-            Content.networkSoundEventDefs.Add(BanditSaoriVoiceoverComponent.nseStealth);
-
-            BanditSaoriVoiceoverComponent.nseBlock = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            BanditSaoriVoiceoverComponent.nseBlock.eventName = "Play_BanditSaori_Muda";
-            Content.networkSoundEventDefs.Add(BanditSaoriVoiceoverComponent.nseBlock);
-
-            BanditSaoriVoiceoverComponent.nseExLevel = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            BanditSaoriVoiceoverComponent.nseExLevel.eventName = "Play_BanditSaori_ExLevel";
-            Content.networkSoundEventDefs.Add(BanditSaoriVoiceoverComponent.nseExLevel);
-
-            BanditSaoriVoiceoverComponent.nseEx = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            BanditSaoriVoiceoverComponent.nseEx.eventName = "Play_BanditSaori_Ex";
-            Content.networkSoundEventDefs.Add(BanditSaoriVoiceoverComponent.nseEx);
+        private NetworkSoundEventDef RegisterNSE(string eventName)
+        {
+            NetworkSoundEventDef nse = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
+            nse.eventName = eventName;
+            Content.networkSoundEventDefs.Add(nse);
+            nseList.Add(new NSEInfo(nse));
+            return nse;
         }
 
         public void RefreshNSE()

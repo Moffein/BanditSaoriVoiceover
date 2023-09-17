@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using BaseVoiceoverLib;
 using RoR2;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -9,39 +10,26 @@ namespace BanditSaoriVoiceover.Components
     public class BanditSaoriVoiceoverComponent : BaseVoiceoverComponent
     {
         public static List<SkinDef> requiredSkinDefs = new List<SkinDef>();
-        public static ItemIndex ScepterIndex;
 
-        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx;
+        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseYes, nseThanks;
 
         private float levelCooldown = 0f;
         private float blockedCooldown = 0f;
         private float lowHealthCooldown = 0f;
         private float specialCooldown = 0f;
-        //private float utilityCooldown = 0f;
 
         private bool acquiredScepter = false;
-
-        protected override void Awake()
-        {
-            spawnVoicelineDelay = 3f;
-            if (Run.instance && Run.instance.stageClearCount == 0)
-            {
-                spawnVoicelineDelay = 6.5f;
-            }
-            base.Awake();
-        }
 
         protected override void Start()
         {
             base.Start();
-            if (inventory && inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
+            if (inventory && inventory.GetItemCount(scepterIndex) > 0) acquiredScepter = true;
         }
 
         protected override void FixedUpdate()
         {
             base.FixedUpdate();
             if (specialCooldown > 0f) specialCooldown -= Time.fixedDeltaTime;
-            //if (utilityCooldown > 0f) utilityCooldown -= Time.fixedDeltaTime;
             if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
             if (blockedCooldown > 0f) blockedCooldown -= Time.fixedDeltaTime;
             if (lowHealthCooldown > 0f) lowHealthCooldown -= Time.fixedDeltaTime;
@@ -67,8 +55,6 @@ namespace BanditSaoriVoiceover.Components
             }
         }
 
-        public override void PlayJump() { }
-
         public override void PlayLevelUp()
         {
             if (levelCooldown > 0f) return;
@@ -89,7 +75,7 @@ namespace BanditSaoriVoiceover.Components
             if (lowHealthCooldown > 0f) return;
             bool playedSound;
 
-            if (Util.CheckRoll(50f))
+            if (Util.CheckRoll(60f))
             {
                 playedSound = TryPlaySound("Play_BanditSaori_LowHealth", 0f, false);
             }
@@ -111,8 +97,6 @@ namespace BanditSaoriVoiceover.Components
                 
             if (playedSound) lowHealthCooldown = 60f;
         }
-
-        public override void PlayPrimaryAuthority() { }
 
         public override void PlaySecondaryAuthority()
         {
@@ -147,7 +131,6 @@ namespace BanditSaoriVoiceover.Components
             bool played = TryPlayNetworkSound(nseStealth, 1.9f, false);
             if (played) utilityCooldown = 30f;
         }*/
-        public override void PlayUtilityAuthority() { }
 
         public override void PlayVictory()
         {
@@ -158,7 +141,7 @@ namespace BanditSaoriVoiceover.Components
         protected override void Inventory_onItemAddedClient(ItemIndex itemIndex)
         {
             base.Inventory_onItemAddedClient(itemIndex);
-            if (ScepterIndex != ItemIndex.None && itemIndex == ScepterIndex)
+            if (scepterIndex != ItemIndex.None && itemIndex == scepterIndex)
             {
                 PlayAcquireScepter();
             }
@@ -184,9 +167,9 @@ namespace BanditSaoriVoiceover.Components
         }
         public void PlayBadItem()
         {
-            if (Util.CheckRoll(50f))
+            if (Util.CheckRoll(80f))
             {
-                TryPlaySound("Play_BanditSaori_Omoshiroi", 0.75f, false);
+                TryPlaySound("Play_BanditSaori_Cafe3", 0.75f, false);
             }
             else
             {
@@ -210,6 +193,42 @@ namespace BanditSaoriVoiceover.Components
             else
             {
                 TryPlaySound("Play_BanditSaori_Relationship_Long", 12.25f, false);
+            }
+        }
+
+        protected override void CheckInputs()
+        {
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonVanitas))
+            {
+                TryPlayNetworkSound(nseVanitas, 1.2f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonVanitasFull))
+            {
+                TryPlayNetworkSound(nseVanitasFull, 2.9f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonHurt))
+            {
+                TryPlayNetworkSound(nseHurt, 0.1f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonMuda))
+            {
+                TryPlayNetworkSound(nseMuda, 0.6f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonOmoshiroi))
+            {
+                TryPlayNetworkSound(nseOmoshiroi, 0.75f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonMunashii))
+            {
+                TryPlayNetworkSound(nseMunashii, 4.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonYes))
+            {
+                TryPlayNetworkSound(nseYes, 0.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonThanks))
+            {
+                TryPlayNetworkSound(nseThanks, 1.5f, false);
             }
         }
     }

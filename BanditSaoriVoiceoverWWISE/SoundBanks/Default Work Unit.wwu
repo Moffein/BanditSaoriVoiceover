@@ -6,8 +6,10 @@
 				<SoundBank Name="BanditSaoriSoundbank" ID="{A930AFF7-4BBA-4DE1-82EF-E194AB0735F0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_BanditSaori_AcquireScepter" ID="{14FBCAB1-D8D2-4030-912A-7CFFE189F5B1}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BanditSaori_Thanks" ID="{9A430B01-0B20-40C0-9933-0A3D0867803C}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Memorial2" ID="{F6F975C7-F7A0-414F-9F19-472D8555C848}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby_Newyear" ID="{CC2204D0-9A44-416F-8B39-4F5A1424E439}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BanditSaori_Defeat" ID="{957DD13E-2817-422A-A850-DF4AC2504625}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_VanitasFull" ID="{064636A5-7694-42D2-8616-C19237CBC736}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby5" ID="{EA6F69B7-0A14-437A-AEC8-F647511C7571}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby_Halloween" ID="{792C5D71-1693-43D7-899F-06DD46A7ED08}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
@@ -18,17 +20,20 @@
 						<ObjectRef Name="Play_BanditSaori_Muda" ID="{8FBA7E2E-A31F-457C-B56D-0D9841C52C75}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Shout" ID="{B9F93EBB-6400-45BB-BE14-EC08093A4FA3}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_TakeDamage" ID="{9B65EB92-185B-47C1-85C2-16A41C411FE2}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BanditSaori_Yes" ID="{3DF8042E-3212-4802-9D71-0D309F590B8C}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby3" ID="{1472D4DC-1B3B-4928-8BAB-B6705189E988}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Cafe3" ID="{5D0393CE-D3C7-4978-8E21-D548123AB38E}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_LevelUp_Long" ID="{C0FAF59F-E3E0-4A5E-93BA-8447A98CBD93}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Relationship" ID="{EF8218C5-0C1B-4A7F-9C05-B2BEF9BCB800}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_TitleDrop" ID="{2C72C2D8-17E5-4AA3-B4FD-8DD4A18DD674}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BanditSaori_Block" ID="{675F4899-C170-4ACA-80DC-76C7F76B9AD1}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Memorial4" ID="{174846B9-7483-4ACD-816F-29BF2A4423A8}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Omoshiroi" ID="{EC157022-0301-4BB2-87AB-DDCAB55E7B35}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Victory" ID="{D0309683-6927-4BC2-A1EE-12FB84C2CC87}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Vanitas" ID="{F4E424E9-9112-4C61-95ED-7CEF7DCF03FF}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_LowHealth" ID="{C1D81B07-A041-4DC6-B3D6-903CE4CEF6E5}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby_bday" ID="{7C96B205-97EE-4DD9-BEA1-F83585E72A1A}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BanditSaori_Munashii" ID="{1CBF436A-AC28-4DE1-A3C5-9B0C6AEA9C70}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby_xmas" ID="{9805CEAA-BD9F-4E76-B87E-99ECC12456E5}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Stealth" ID="{26A7B1D7-EA02-4E9B-B267-2A5B5407ADEF}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BanditSaori_Lobby" ID="{0F817A50-A75D-4F68-A125-60B2D43E1023}" WorkUnitID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" Origin="Manual" Filter="7"/>

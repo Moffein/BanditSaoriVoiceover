@@ -322,6 +322,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BanditSaori_Munashii" ID="{1CBF436A-AC28-4DE1-A3C5-9B0C6AEA9C70}">
+					<ChildrenList>
+						<Action Name="" ID="{6495C80A-B835-425C-9D20-A3CFA0BEE9C4}" ShortID="125787347">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_3" ID="{38E5EFEB-06CD-4191-A84C-249862FB57A4}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Block" ID="{675F4899-C170-4ACA-80DC-76C7F76B9AD1}">
+					<ChildrenList>
+						<Action Name="" ID="{34C66051-176A-4B1E-AEB5-41D081CB7F8A}" ShortID="302686730">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Block" ID="{785E97FB-A170-48F7-BEBA-B01437E4CBB7}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Yes" ID="{3DF8042E-3212-4802-9D71-0D309F590B8C}">
+					<ChildrenList>
+						<Action Name="" ID="{6327EF8B-7DB6-4059-9FE4-EDC71137BEDD}" ShortID="33804534">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yes" ID="{57302F5F-4462-48C3-B316-D4DDCDA3ADCE}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Thanks" ID="{9A430B01-0B20-40C0-9933-0A3D0867803C}">
+					<ChildrenList>
+						<Action Name="" ID="{7E6E6A0B-45B5-49EE-9EAE-C72A8D016B23}" ShortID="64773631">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Battle_Recovery_1" ID="{A9B1ACBA-B473-46F1-9A63-F3080367CD9D}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
