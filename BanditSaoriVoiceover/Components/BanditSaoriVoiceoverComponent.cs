@@ -9,7 +9,7 @@ namespace BanditSaoriVoiceover.Components
 {
     public class BanditSaoriVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseYes, nseThanks;
+        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseYes, nseThanks, nseTitle;
 
         private float levelCooldown = 0f;
         private float blockedCooldown = 0f;
