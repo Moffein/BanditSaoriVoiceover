@@ -15,6 +15,7 @@ namespace BanditSaoriVoiceover.Components
         private float blockedCooldown = 0f;
         private float lowHealthCooldown = 0f;
         private float specialCooldown = 0f;
+        private float shrineFailCooldown = 0f;
 
         private bool acquiredScepter = false;
 
@@ -31,6 +32,7 @@ namespace BanditSaoriVoiceover.Components
             if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
             if (blockedCooldown > 0f) blockedCooldown -= Time.fixedDeltaTime;
             if (lowHealthCooldown > 0f) lowHealthCooldown -= Time.fixedDeltaTime;
+            if (shrineFailCooldown > 0f) shrineFailCooldown -= Time.fixedDeltaTime;
         }
 
         public override void PlayDamageBlockedServer()
@@ -163,23 +165,10 @@ namespace BanditSaoriVoiceover.Components
             TryPlaySound("Play_BanditSaori_AcquireScepter", 22.75f, true);
             acquiredScepter = true;
         }
+
         public void PlayBadItem()
         {
-            if (Util.CheckRoll(80f))
-            {
-                TryPlaySound("Play_BanditSaori_Cafe3", 0.75f, false);
-            }
-            else
-            {
-                if (Util.CheckRoll(50f))
-                {
-                    TryPlaySound("Play_BanditSaori_Vanitas", 1.2f, false);
-                }
-                else
-                {
-                    TryPlaySound("Play_BanditSaori_VanitasFull", 2.9f, false);
-                }
-            }
+            TryPlaySound("Play_BanditSaori_Cafe3", 0.75f, false);
         }
 
         public void PlayAcquireLegendary()
@@ -191,6 +180,24 @@ namespace BanditSaoriVoiceover.Components
             else
             {
                 TryPlaySound("Play_BanditSaori_Relationship_Long", 12.25f, false);
+            }
+        }
+
+        public override void PlayShrineOfChanceFailServer()
+        {
+            if (shrineFailCooldown > 0f) return;
+            if (Util.CheckRoll(15f))
+            {
+                bool played;
+                if (Util.CheckRoll(50f))
+                {
+                    played = TryPlayNetworkSound(nseVanitas, 1.2f, false);
+                }
+                else
+                {
+                    played = TryPlayNetworkSound(nseVanitasFull, 2.9f, false);
+                }
+                if (played) shrineFailCooldown = 60f;
             }
         }
 
