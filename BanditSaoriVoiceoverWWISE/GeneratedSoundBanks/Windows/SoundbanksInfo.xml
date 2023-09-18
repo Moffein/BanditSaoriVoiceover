@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2987602252" Language="SFX" Hash="2340490903">
+		<SoundBank Id="2987602252" Language="SFX" Hash="1404787962">
 			<ObjectPath>\SoundBanks\Default Work Unit\BanditSaoriSoundbank</ObjectPath>
 			<ShortName>BanditSaoriSoundbank</ShortName>
 			<Path>BanditSaoriSoundbank.bnk</Path>
@@ -46,6 +46,14 @@
 						<File Id="145984689" Language="SFX">
 							<ShortName>Saori_Cafe_monolog_3.wav</ShortName>
 							<Path>SFX\Saori_Cafe_monolog_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2495075433" Name="Play_BanditSaori_Cafe5" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_Cafe5">
+					<IncludedMemoryFiles>
+						<File Id="867431133" Language="SFX">
+							<ShortName>Saori_Cafe_monolog_5.wav</ShortName>
+							<Path>SFX\Saori_Cafe_monolog_5_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -98,6 +106,30 @@
 						<File Id="801804637" Language="SFX">
 							<ShortName>Saori_ExSkill_Level_1.wav</ShortName>
 							<Path>SFX\Saori_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2015082491" Name="Play_BanditSaori_ExLevel1" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_ExLevel1">
+					<IncludedMemoryFiles>
+						<File Id="801804637" Language="SFX">
+							<ShortName>Saori_ExSkill_Level_1.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2015082488" Name="Play_BanditSaori_ExLevel2" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_ExLevel2">
+					<IncludedMemoryFiles>
+						<File Id="734012125" Language="SFX">
+							<ShortName>Saori_ExSkill_Level_2.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_Level_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2015082489" Name="Play_BanditSaori_ExLevel3" ObjectPath="\Events\Default Work Unit\Play_BanditSaori_ExLevel3">
+					<IncludedMemoryFiles>
+						<File Id="597146826" Language="SFX">
+							<ShortName>Saori_ExSkill_Level_3.wav</ShortName>
+							<Path>SFX\Saori_ExSkill_Level_3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -9,7 +9,7 @@ namespace BanditSaoriVoiceover.Components
 {
     public class BanditSaoriVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseThanks, nseTitle, nseIntro, nseFormation;
+        public static NetworkSoundEventDef nseShout, nseStealth, nseBlock, nseExLevel, nseEx, nseVanitas, nseVanitasFull, nseMuda, nseHurt, nseOmoshiroi, nseMunashii, nseThanks, nseTitle, nseIntro, nseFormation, nseCafe5, nseExLevel1, nseExLevel2, nseExLevel3;
 
         private float levelCooldown = 0f;
         private float blockedCooldown = 0f;
@@ -206,42 +206,72 @@ namespace BanditSaoriVoiceover.Components
             if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonVanitas))
             {
                 TryPlayNetworkSound(nseVanitas, 1.2f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonVanitasFull))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonVanitasFull))
             {
                 TryPlayNetworkSound(nseVanitasFull, 2.9f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonHurt))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonHurt))
             {
                 TryPlayNetworkSound(nseHurt, 0.1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonMuda))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonMuda))
             {
                 TryPlayNetworkSound(nseMuda, 0.6f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonOmoshiroi))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonOmoshiroi))
             {
                 TryPlayNetworkSound(nseOmoshiroi, 0.75f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonMunashii))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonMunashii))
             {
                 TryPlayNetworkSound(nseMunashii, 4.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonThanks))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonThanks))
             {
                 TryPlayNetworkSound(nseThanks, 1.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonTitle))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonTitle))
             {
                 TryPlayNetworkSound(nseTitle, 1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonIntro))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonIntro))
             {
                 TryPlayNetworkSound(nseIntro, 12.3f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonFormation))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonFormation))
             {
                 TryPlayNetworkSound(nseFormation, 1f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonCafe5))
+            {
+                TryPlayNetworkSound(nseCafe5, 3.55f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonExLevel1))
+            {
+                TryPlayNetworkSound(nseExLevel1, 1.85f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonExLevel2))
+            {
+                TryPlayNetworkSound(nseExLevel2, 0.1f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(BanditSaoriVoiceoverPlugin.buttonExLevel3))
+            {
+                TryPlayNetworkSound(nseExLevel3, 1.45f, false);
+                return;
             }
         }
     }

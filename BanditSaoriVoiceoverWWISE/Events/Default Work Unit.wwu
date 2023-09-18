@@ -388,6 +388,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BanditSaori_Cafe5" ID="{33D82455-2F77-455F-A919-368BB56476E4}">
+					<ChildrenList>
+						<Action Name="" ID="{39F220F3-A750-49E6-84F2-B71DEDEBD481}" ShortID="478711935">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Cafe_monolog_5" ID="{EDB49F18-32F6-4B1C-B0E0-E408B32A1442}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_ExLevel3" ID="{A410EB55-3F18-444B-AEAA-1BF2A1B34BDF}">
+					<ChildrenList>
+						<Action Name="" ID="{351B61F7-14F0-4473-884F-C8870E4FCB2D}" ShortID="287912117">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_Level_3" ID="{5306EACE-586F-49D1-80EC-92AC55A56788}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_ExLevel1" ID="{DB836701-F351-4BB8-B885-D08ABA9C05AA}">
+					<ChildrenList>
+						<Action Name="" ID="{0DF3C573-A425-44B5-9CB0-9A7FF4AA0486}" ShortID="1031289760">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_Level_1" ID="{148F0352-C647-4D8E-AA3D-2A7BBD3871DB}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_ExLevel2" ID="{25B7786E-BB01-421F-8AC0-79541B65D7CF}">
+					<ChildrenList>
+						<Action Name="" ID="{36205518-A232-44F2-AD96-BF6625FE396C}" ShortID="20575427">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_Level_2" ID="{2F6529A4-0BA8-4F21-BAF5-3EA6522F7961}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
