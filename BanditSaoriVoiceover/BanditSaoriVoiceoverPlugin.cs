@@ -102,7 +102,7 @@ namespace BanditSaoriVoiceover
             SkinDef[] skins = SkinCatalog.FindSkinsForBody(BodyCatalog.FindBodyIndex("Bandit2Body"));
             foreach (SkinDef skinDef in skins)
             {
-                if (skinDef.name == "SayoriSkin")
+                if (skinDef.name == "SaoriSkin")
                 {
                     saoriSkin = skinDef;
                     break;
