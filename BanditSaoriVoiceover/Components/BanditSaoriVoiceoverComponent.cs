@@ -274,5 +274,10 @@ namespace BanditSaoriVoiceover.Components
                 return;
             }
         }
+
+        public override bool ComponentEnableVoicelines()
+        {
+            return BanditSaoriVoiceoverPlugin.enableVoicelines.Value;
+        }
     }
 }

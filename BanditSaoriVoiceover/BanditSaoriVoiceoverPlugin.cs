@@ -16,7 +16,7 @@ namespace BanditSaoriVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Bread.BanditSaoriSkin", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.BanditSaoriVoiceover", "BanditSaoriVoiceover", "1.0.0")]
+    [BepInPlugin("com.Schale.BanditSaoriVoiceover", "BanditSaoriVoiceover", "1.0.1")]
     public class BanditSaoriVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonVanitas, buttonVanitasFull, buttonMuda, buttonHurt, buttonOmoshiroi, buttonMunashii, buttonThanks, buttonTitle, buttonIntro, buttonFormation, buttonCafe5, buttonExLevel1, buttonExLevel2, buttonExLevel3;
