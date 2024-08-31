@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{491DB24C-D0CA-4350-8375-296B2DA85D84}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_BanditSaori_AcquireScepter" ID="{14FBCAB1-D8D2-4030-912A-7CFFE189F5B1}">
+					<ChildrenList>
+						<Action Name="" ID="{29889DB4-9C52-4249-8565-7B493DBFD3E1}" ShortID="1036481925">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExWeapon_Get" ID="{F9B5D172-8EAE-453F-9FEA-88C1E3C27CB3}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_TitleDrop" ID="{2C72C2D8-17E5-4AA3-B4FD-8DD4A18DD674}">
+					<ChildrenList>
+						<Action Name="" ID="{422214B7-41FC-4C9E-92A6-789FF116E89D}" ShortID="479495453">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Title" ID="{771596D0-8231-4724-BE4A-25F136C52351}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Lobby" ID="{0F817A50-A75D-4F68-A125-60B2D43E1023}">
+					<ChildrenList>
+						<Action Name="" ID="{53B4A14B-A1DE-4C6B-99AD-E2E3E14A44FC}" ShortID="724707316">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lobby" ID="{BD0CE924-C4E1-4653-8A0B-FCC9F5336CFA}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Lobby_xmas" ID="{9805CEAA-BD9F-4E76-B87E-99ECC12456E5}">
+					<ChildrenList>
+						<Action Name="" ID="{3E0C24D1-CE2C-4164-A871-E277337D2B66}" ShortID="533319146">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Season_Xmas" ID="{150A49F8-B59B-4E2D-AF01-95C6D8AFA0CE}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Lobby_Halloween" ID="{792C5D71-1693-43D7-899F-06DD46A7ED08}">
+					<ChildrenList>
+						<Action Name="" ID="{D025E562-EC9A-4F9E-990B-32FF43B5E6C1}" ShortID="280014173">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Season_Halloween" ID="{1DB7BD05-8E66-4A73-AEEC-194D192FD3FB}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Lobby_bday" ID="{7C96B205-97EE-4DD9-BEA1-F83585E72A1A}">
+					<ChildrenList>
+						<Action Name="" ID="{77762A1A-CD2F-4DE0-A7E0-F136374AC9ED}" ShortID="139066452">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birthday" ID="{B0BB8B04-1DCF-4FAF-B3F6-ED75A7F620F2}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Lobby_Newyear" ID="{CC2204D0-9A44-416F-8B39-4F5A1424E439}">
+					<ChildrenList>
+						<Action Name="" ID="{37380FB0-88BF-4858-BF68-A0862F56D951}" ShortID="870139478">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Season_NewYear" ID="{1551AA04-BEE7-4D47-87F5-416C84BB92FF}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_TakeDamage" ID="{9B65EB92-185B-47C1-85C2-16A41C411FE2}">
+					<ChildrenList>
+						<Action Name="" ID="{5BEA31DF-B03D-41CC-90E9-34E5C1D4349F}" ShortID="176566489">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hurt" ID="{B8E6FC5F-0770-43FF-A62E-473625E77BBD}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_LevelUp_Short" ID="{17294341-EA37-440B-A777-F660A815A297}">
+					<ChildrenList>
+						<Action Name="" ID="{17285359-4707-4D1A-B8F1-0109196885A2}" ShortID="751691520">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LevelUp_Short" ID="{CF0E8756-0B38-46BA-A857-17380F261FD9}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_LevelUp_Long" ID="{C0FAF59F-E3E0-4A5E-93BA-8447A98CBD93}">
+					<ChildrenList>
+						<Action Name="" ID="{41DFF68F-DFA0-4244-B6D8-3C2AB769EB6E}" ShortID="193128167">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LevelUp_Long" ID="{1027E518-7E4C-4632-B62F-C9437B47D943}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Vanitas" ID="{F4E424E9-9112-4C61-95ED-7CEF7DCF03FF}">
+					<ChildrenList>
+						<Action Name="" ID="{EB18F59B-3B78-4428-AB61-AC988195E640}" ShortID="989773895">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_2" ID="{30995709-E429-4498-A031-691604ACE259}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_VanitasFull" ID="{064636A5-7694-42D2-8616-C19237CBC736}">
+					<ChildrenList>
+						<Action Name="" ID="{BB442C7B-5F03-413F-8ECA-814DAD14BFE1}" ShortID="976065153">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_1" ID="{AE9EC3D2-E030-4CF7-813C-A4E5ABB48457}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Muda" ID="{8FBA7E2E-A31F-457C-B56D-0D9841C52C75}">
+					<ChildrenList>
+						<Action Name="" ID="{9F6D4005-37FA-4B82-A4B4-554BEFDFF143}" ShortID="210298854">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_CommonSkill" ID="{BEFE165C-DF3F-4988-BC10-8562C5629442}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Omoshiroi" ID="{EC157022-0301-4BB2-87AB-DDCAB55E7B35}">
+					<ChildrenList>
+						<Action Name="" ID="{DA2B3D20-3BF0-47F0-9A95-2008D11DC2E2}" ShortID="598143216">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Battle_TacticalAction_1" ID="{6F6C183D-52CC-4997-B7C3-EACA93893E13}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Spawn" ID="{2BAB574F-1691-448E-9EE9-E8A139CF644F}">
+					<ChildrenList>
+						<Action Name="" ID="{B62BE538-70DB-43F0-9AC5-4CCEE35CB98C}" ShortID="834608288">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spawn" ID="{9F7AE246-1C0F-437F-8D5D-D9C81306B010}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Shout" ID="{B9F93EBB-6400-45BB-BE14-EC08093A4FA3}">
+					<ChildrenList>
+						<Action Name="" ID="{93177D45-2C5F-4A23-91DD-91603F0600F6}" ShortID="328961256">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shout" ID="{131DBEC4-C8FD-4C75-9DC4-66E8A831C8AB}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Stealth" ID="{26A7B1D7-EA02-4E9B-B267-2A5B5407ADEF}">
+					<ChildrenList>
+						<Action Name="" ID="{EF1C44E8-EFE2-4B7B-9171-FCA36B1C9E64}" ShortID="1023860931">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stealth" ID="{F10BEB60-1F94-42E6-A567-A1E5D0413E3B}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Cafe3" ID="{5D0393CE-D3C7-4978-8E21-D548123AB38E}">
+					<ChildrenList>
+						<Action Name="" ID="{3286E6EB-D6CB-4C6D-87A8-713128389521}" ShortID="378760902">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Cafe_monolog_3" ID="{09D2EE83-6F7E-4A43-BF1C-816BB6AA2AB8}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_LowHealth" ID="{C1D81B07-A041-4DC6-B3D6-903CE4CEF6E5}">
+					<ChildrenList>
+						<Action Name="" ID="{016BF9B2-6E9B-4A3B-86E8-2A941D26CD01}" ShortID="42615235">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LowHealth" ID="{C699EA09-0245-45B2-ABE6-FFA002777136}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Memorial2" ID="{F6F975C7-F7A0-414F-9F19-472D8555C848}">
+					<ChildrenList>
+						<Action Name="" ID="{75130ABC-45AD-4DDF-82DB-0D2180E374E8}" ShortID="308608233">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Memorial2" ID="{A9650E78-8AB8-4580-94C2-134C8FCAA3DB}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Memorial4" ID="{174846B9-7483-4ACD-816F-29BF2A4423A8}">
+					<ChildrenList>
+						<Action Name="" ID="{AF63B947-FE85-425C-95FD-D9A80F929CA1}" ShortID="743865062">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Memorial4" ID="{FB645498-BFDC-4BD2-BA73-65F0B5C143A0}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Lobby5" ID="{EA6F69B7-0A14-437A-AEC8-F647511C7571}">
+					<ChildrenList>
+						<Action Name="" ID="{F9DD40F0-C61F-4E85-9445-AA03F9BEB6BC}" ShortID="574803755">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Lobby_5" ID="{F3BAF24B-7B2A-4A8F-8EB6-26EDF2597DD6}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Ex" ID="{ED6A8A4C-B401-4FB9-9E5D-64CA6F43F468}">
+					<ChildrenList>
+						<Action Name="" ID="{CE6225F3-9B5D-4654-A095-110C6BE87351}" ShortID="238650488">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ex" ID="{62207B11-D8B9-4C2C-BB1B-DE5E5DF29BA0}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_ExLevel" ID="{C1C7F4AE-ABA6-4487-936D-17F791593D68}">
+					<ChildrenList>
+						<Action Name="" ID="{A11B392C-08F5-4502-843B-D6FF427AA43E}" ShortID="231233409">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ExLevel" ID="{27CF8071-DB56-4A20-88D8-8A2144813C9A}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Victory" ID="{D0309683-6927-4BC2-A1EE-12FB84C2CC87}">
+					<ChildrenList>
+						<Action Name="" ID="{E79E2720-6FC1-47AD-82E3-5C75054DDBF0}" ShortID="635667858">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{3946633D-3243-49E1-BA7B-DBC9CE85DB45}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Relationship" ID="{EF8218C5-0C1B-4A7F-9C05-B2BEF9BCB800}">
+					<ChildrenList>
+						<Action Name="" ID="{9F2E2D7A-4D5B-41B8-B482-7758E9022D0F}" ShortID="850172994">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Relationship" ID="{05971689-3463-4404-BAFC-05D760DE5B4E}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Relationship_Long" ID="{1986EE76-000E-43F7-9283-23298B24DE12}">
+					<ChildrenList>
+						<Action Name="" ID="{DE9A4E49-29CF-4517-974B-BBFAD4C5E3A7}" ShortID="1003712485">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Relationship_Up_2" ID="{219F63C3-8F75-4D63-9F31-C94C99AC9181}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Lobby3" ID="{1472D4DC-1B3B-4928-8BAB-B6705189E988}">
+					<ChildrenList>
+						<Action Name="" ID="{91E4DE39-B9F4-46F5-9D93-AF29874745A2}" ShortID="765087255">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Lobby_3" ID="{B99AF3B9-FF33-47C4-90C3-72AE502F7BED}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Defeat" ID="{957DD13E-2817-422A-A850-DF4AC2504625}">
+					<ChildrenList>
+						<Action Name="" ID="{8813A934-401F-4CDC-8EC9-8F1A8E089361}" ShortID="50307762">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Defeat" ID="{FED52E04-3AFF-4408-A5F5-AE3379402190}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Munashii" ID="{1CBF436A-AC28-4DE1-A3C5-9B0C6AEA9C70}">
+					<ChildrenList>
+						<Action Name="" ID="{6495C80A-B835-425C-9D20-A3CFA0BEE9C4}" ShortID="125787347">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_3" ID="{38E5EFEB-06CD-4191-A84C-249862FB57A4}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Block" ID="{675F4899-C170-4ACA-80DC-76C7F76B9AD1}">
+					<ChildrenList>
+						<Action Name="" ID="{34C66051-176A-4B1E-AEB5-41D081CB7F8A}" ShortID="302686730">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Block" ID="{785E97FB-A170-48F7-BEBA-B01437E4CBB7}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Yes" ID="{3DF8042E-3212-4802-9D71-0D309F590B8C}">
+					<ChildrenList>
+						<Action Name="" ID="{6327EF8B-7DB6-4059-9FE4-EDC71137BEDD}" ShortID="33804534">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yes" ID="{57302F5F-4462-48C3-B316-D4DDCDA3ADCE}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Thanks" ID="{9A430B01-0B20-40C0-9933-0A3D0867803C}">
+					<ChildrenList>
+						<Action Name="" ID="{7E6E6A0B-45B5-49EE-9EAE-C72A8D016B23}" ShortID="64773631">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Battle_Recovery_1" ID="{A9B1ACBA-B473-46F1-9A63-F3080367CD9D}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Intro" ID="{60A9AC67-9FC1-46AE-B222-CB674AE72920}">
+					<ChildrenList>
+						<Action Name="" ID="{8DC4E747-0FBE-4407-B6CD-2AF5529BB739}" ShortID="313994706">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Gachaget" ID="{4608F8B3-F1E9-4C95-A3D1-076C98FCAD52}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Formation_Select" ID="{5B1584CA-47F0-467D-ACEB-CD9EEA977E98}">
+					<ChildrenList>
+						<Action Name="" ID="{D76B588C-53C7-4936-898C-BCF62B7E6BE9}" ShortID="287869904">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Formation_Select" ID="{B180D4B9-D686-4BB6-918B-38F654F9D9D5}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_Cafe5" ID="{33D82455-2F77-455F-A919-368BB56476E4}">
+					<ChildrenList>
+						<Action Name="" ID="{39F220F3-A750-49E6-84F2-B71DEDEBD481}" ShortID="478711935">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_Cafe_monolog_5" ID="{EDB49F18-32F6-4B1C-B0E0-E408B32A1442}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_ExLevel3" ID="{A410EB55-3F18-444B-AEAA-1BF2A1B34BDF}">
+					<ChildrenList>
+						<Action Name="" ID="{351B61F7-14F0-4473-884F-C8870E4FCB2D}" ShortID="287912117">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_Level_3" ID="{5306EACE-586F-49D1-80EC-92AC55A56788}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_ExLevel1" ID="{DB836701-F351-4BB8-B885-D08ABA9C05AA}">
+					<ChildrenList>
+						<Action Name="" ID="{0DF3C573-A425-44B5-9CB0-9A7FF4AA0486}" ShortID="1031289760">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_Level_1" ID="{148F0352-C647-4D8E-AA3D-2A7BBD3871DB}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BanditSaori_ExLevel2" ID="{25B7786E-BB01-421F-8AC0-79541B65D7CF}">
+					<ChildrenList>
+						<Action Name="" ID="{36205518-A232-44F2-AD96-BF6625FE396C}" ShortID="20575427">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saori_ExSkill_Level_2" ID="{2F6529A4-0BA8-4F21-BAF5-3EA6522F7961}" WorkUnitID="{B8755BEB-7DB6-45E8-942A-0A649420A1DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

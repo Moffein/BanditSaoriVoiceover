@@ -13,10 +13,11 @@ using UnityEngine.AddressableAssets;
 
 namespace BanditSaoriVoiceover
 {
+    [BepInDependency(R2API.SoundAPI.PluginGUID)]
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Bread.BanditSaoriSkin", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.BanditSaoriVoiceover", "BanditSaoriVoiceover", "1.0.1")]
+    [BepInPlugin("com.Schale.BanditSaoriVoiceover", "BanditSaoriVoiceover", "1.0.2")]
     public class BanditSaoriVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonVanitas, buttonVanitasFull, buttonMuda, buttonHurt, buttonOmoshiroi, buttonMunashii, buttonThanks, buttonTitle, buttonIntro, buttonFormation, buttonCafe5, buttonExLevel1, buttonExLevel2, buttonExLevel3;
@@ -36,6 +37,8 @@ namespace BanditSaoriVoiceover
             {
                 assetBundle = AssetBundle.LoadFromStream(stream);
             }
+
+            SoundBanks.Init();
 
             InitNSE();
 
@@ -66,11 +69,6 @@ namespace BanditSaoriVoiceover
         private void EnableVoicelines_SettingChanged(object sender, EventArgs e)
         {
             RefreshNSE();
-        }
-
-        private void Start()
-        {
-            SoundBanks.Init();
         }
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]

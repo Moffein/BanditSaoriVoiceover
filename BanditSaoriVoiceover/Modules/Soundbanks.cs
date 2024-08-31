@@ -1,6 +1,9 @@
-﻿using System;
+﻿using R2API;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace BanditSaoriVoiceoverPlugin.Modules
@@ -20,9 +23,19 @@ namespace BanditSaoriVoiceoverPlugin.Modules
         {
             if (initialized) return;
             initialized = true;
-            AKRESULT akResult = AkSoundEngine.AddBasePath(SoundBankDirectory);
 
-            AkSoundEngine.LoadBank("BanditSaoriSoundbank.bnk", out _);
+            //UnityEngine.Debug.Log("AssemblyDir: " + Files.assemblyDir);
+            using (Stream manifestResourceStream = new FileStream(SoundBankDirectory +"\\BanditSaoriSoundbank.bnk", FileMode.Open))
+            {
+
+                byte[] array = new byte[manifestResourceStream.Length];
+                manifestResourceStream.Read(array, 0, array.Length);
+                SoundAPI.SoundBanks.Add(array);
+            }
+
+            /*AKRESULT akResult = AkSoundEngine.AddBasePath(SoundBankDirectory);
+
+            AkSoundEngine.LoadBank("BanditSaoriSoundbank.bnk", out _);*/
         }
     }
 }
