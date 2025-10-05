@@ -127,7 +127,7 @@ namespace BanditSaoriVoiceover
             bool played = false;
             if (!playedSeasonalVoiceline)
             {
-                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
+                if ((System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1) || System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 31)
                 {
                     Util.PlaySound("Play_BanditSaori_Lobby_Newyear", mannequinObject);
                     played = true;
@@ -142,7 +142,7 @@ namespace BanditSaoriVoiceover
                     Util.PlaySound("Play_BanditSaori_Lobby_Halloween", mannequinObject);
                     played = true;
                 }
-                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                else if (System.DateTime.Today.Month == 12 && (System.DateTime.Today.Day == 24 || System.DateTime.Today.Day == 25))
                 {
                     Util.PlaySound("Play_BanditSaori_Lobby_xmas", mannequinObject);
                     played = true;
